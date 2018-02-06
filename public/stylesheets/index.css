@@ -1,0 +1,761 @@
+.con {
+  width: 100%;
+  float: left;
+}
+.con .nav {
+  width: 100%;
+  float: left;
+}
+.con .nav img {
+  width: 2%;
+  float: left;
+  cursor: pointer;
+  margin-left: 10%;
+  vertical-align: middle;
+}
+.con .nav ul {
+  float: left;
+  width: 80%;
+  margin-left: 5%;
+}
+.con .nav ul li {
+  float: left;
+  height: 100%;
+  padding: 0.03rem 0.2rem;
+  margin-left: 5%;
+  cursor: pointer;
+  font-size: 0.1rem;
+}
+.con .nav ul .login,
+.con .nav ul .register {
+  padding: 0.045rem 0.1rem;
+  font-size: 0.08rem;
+}
+.con .nav ul .register {
+  margin-left: 15%;
+}
+.con .nav ul .login {
+  margin-left: 0;
+}
+.con .shuffling {
+  width: 100%;
+}
+.con .shuffling img {
+  width: 100%;
+}
+.con .shuffling .before,
+.con .shuffling .next {
+  float: left;
+  width: 2.2%;
+  padding: 0.15rem 0;
+  background: black;
+  margin-top: -1.5rem;
+  z-index: 2;
+  position: relative;
+  display: none;
+  cursor: pointer;
+}
+.con .shuffling .before {
+  margin-left: 5%;
+}
+.con .shuffling .before img {
+  width: 100%;
+}
+.con .shuffling .next {
+  float: right;
+  margin-right: 5%;
+}
+.con .shuffling .next img {
+  width: 100%;
+}
+.con .shuffling .next:hover,
+.con .shuffling .before:hover {
+  opacity: 0.5;
+}
+.con .info {
+  width: 65%;
+  margin: auto;
+  border-bottom: 2px solid #006ECC;
+  position: relative;
+}
+.con .info .top {
+  width: 16%;
+  padding: 0.05rem;
+  height: 1.6rem;
+  background: white;
+  position: absolute;
+  overflow: hidden;
+  top: -0.6rem;
+  box-shadow: -3px -3px 10px #888888;
+}
+.con .info .top img {
+  width: 94%;
+  height: 96%;
+  margin: 3% 2% 0 3%;
+  position: absolute;
+  top: 0;
+  cursor: pointer;
+  left: 0;
+}
+.con .info .detail {
+  width: 63%;
+  margin-left: 18%;
+  float: left;
+  padding: 0.15rem 0 0 3%;
+}
+.con .info .detail .name {
+  font-size: 0.15rem;
+}
+.con .info .detail .actor {
+  display: inline-block;
+  padding: 0.08rem 0 0 0;
+  font-size: 0.08rem;
+  letter-spacing: 0.005rem;
+  line-height: 0.15rem;
+  color: #AAAAAA;
+}
+.con .info .detail .actor span {
+  margin: 0 0.4rem;
+}
+.con .info .detail .address {
+  padding: 0.08rem 0 0 0;
+}
+.con .info .detail .address a {
+  font-size: 0.08rem;
+  display: inline-block;
+  width: 20%;
+  float: left;
+  padding-top: 0.05rem;
+  color: #666;
+}
+.con .info .detail .address ul li {
+  float: left;
+  padding: 0.02rem 0.05rem;
+  margin-left: 20px;
+  cursor: pointer;
+  border-radius: 3px;
+  background: #F6F6F6;
+}
+.con .info .detail .address ul li span {
+  font-size: 0.08rem;
+}
+.con .info .detail .address ul li .sp2 {
+  margin-left: 0.05rem;
+  color: lightcoral;
+}
+.con .info .price {
+  width: 15%;
+  float: left;
+  padding: 0.2rem 0;
+  text-align: center;
+}
+.con .info .price .sp1 {
+  font-size: 0.3rem;
+  color: #FFC000;
+}
+.con .info .price .sp2 {
+  color: #AAAAAA;
+}
+.con .info .price p {
+  font-size: 0.1rem;
+  background: #006ECC;
+  color: white;
+  width: 62%;
+  margin-left: 19%;
+  border-radius: 20px;
+  padding: 0.05rem 0;
+  cursor: pointer;
+}
+.con .info .introduce {
+  width: 100%;
+  float: left;
+}
+.con .info .introduce .title {
+  width: 16%;
+  padding: 0.1rem 0.05rem 0.05rem 0.05rem;
+}
+.con .info .introduce .title a {
+  cursor: pointer;
+  width: 78%;
+  display: inline-block;
+  font-size: 0.1rem;
+  font-weight: bold;
+  float: left;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.con .info .introduce .title a:hover {
+  color: #006ECC;
+}
+.con .info .introduce .title .sp1 {
+  margin-left: 2%;
+  margin-top: 0.08rem;
+  float: left;
+  display: inline-block;
+  width: 20%;
+  font-size: 0.02rem;
+  color: #006ECC;
+}
+.con .info .introduce .title .sp2 {
+  display: inline-block;
+  width: 100%;
+  padding: 0.03rem 0;
+  font-size: 0.02rem;
+}
+.con .content {
+  width: 65%;
+  margin: auto;
+  border-top: none;
+  overflow: hidden;
+  position: relative;
+}
+.con .content .navigation {
+  padding: 0.08rem 0;
+  font-size: 0.12rem;
+}
+.con .content .navigation span {
+  font-size: 0.05rem;
+  margin-left: 0.1rem;
+  cursor: pointer;
+  color: #AAAAAA;
+}
+.con .content .movie {
+  width: 1000%;
+  float: left;
+  position: relative;
+  overflow: hidden;
+  height: 2.3rem;
+  padding: 0 0 0.2rem 0;
+}
+.con .content .movie ul {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  top: 0;
+}
+.con .content .movie ul li {
+  float: left;
+  width: 1.1rem;
+  padding-left: 0.084rem;
+  cursor: pointer;
+}
+.con .content .movie ul li .listCon {
+  width: 1.1rem;
+  height: 1.55rem;
+  position: relative;
+}
+.con .content .movie ul li .listCon img {
+  width: 100%;
+  height: 100%;
+}
+.con .content .movie ul li .listCon .mask {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: black;
+  opacity: 0.75;
+  filter: alpha(opacity=75);
+  display: none;
+}
+.con .content .movie ul li .listCon .mask span {
+  color: white;
+  font-size: 0.05rem;
+  padding: 0.05rem 0.03rem 0.05rem 0.07rem;
+  display: inline-block;
+}
+.con .content .movie ul li .listCon .mask span:first-child {
+  padding-top: 0.15rem;
+}
+.con .content .movie ul li .title {
+  padding: 0.02rem 0;
+}
+.con .content .movie ul li .title a {
+  font-size: 0.09rem;
+  display: inline-block;
+  width: 70%;
+  padding: 0.05rem 0 0 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  float: left;
+}
+.con .content .movie ul li .title .sp1 {
+  display: inline-block;
+  width: 22%;
+  font-size: 0.06rem;
+  float: right;
+  padding-top: 0.06rem;
+  color: #006ECC;
+}
+.con .content .movie ul li .title .sp2 {
+  display: inline-block;
+  width: 100%;
+  padding: 0.1rem 0 0.03rem 0;
+  color: #AAAAAA;
+  overflow: hidden;
+  font-size: 0.08rem;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.con .content .movie ul li .price {
+  padding: 0 0.02rem;
+}
+.con .content .movie ul li .price .sp1 {
+  color: #FF7700;
+  font-size: 0.12rem;
+}
+.con .content .movie ul li .price .sp2 {
+  font-size: 0.06rem;
+  color: #AAAAAA;
+  margin-left: 0.03rem;
+}
+.con .content .movie ul li .price .buy {
+  display: inline-block;
+  float: right;
+  padding: 0.02rem 0.1rem;
+  font-size: 0.03rem;
+  background: #006ECC;
+  margin-top: 0.03rem;
+  color: white;
+  border-radius: 0.07rem;
+}
+.con .content .movie ul li:first-child {
+  padding: 0;
+}
+.con .content .butn .before {
+  width: 0.2rem;
+  background: black;
+  height: 0.4rem;
+  float: left;
+  border-radius: 0 0.2rem 0.2rem 0;
+  opacity: 0.8;
+  filter: alpha(opacity=80);
+  position: absolute;
+  top: 0.85rem;
+  display: none;
+}
+.con .content .butn .before span {
+  color: white;
+  cursor: pointer;
+  font-size: 0.27rem;
+}
+.con .content .butn .next {
+  border-radius: 0.2rem 0 0 0.2rem;
+  width: 0.2rem;
+  background: black;
+  height: 0.4rem;
+  float: left;
+  opacity: 0.7;
+  position: absolute;
+  right: 0;
+  top: 0.85rem;
+  display: none;
+  filter: alpha(opacity=70);
+}
+.con .content .butn .next span {
+  color: white;
+  cursor: pointer;
+  font-size: 0.27rem;
+}
+.con .content .ready {
+  width: 100%;
+  padding: 0 0 0.2rem 0;
+  float: left;
+  position: relative;
+  overflow: hidden;
+}
+.con .content .ready li {
+  float: left;
+  width: 31%;
+  cursor: pointer;
+  padding: 0 0.1rem;
+  height: 1.3rem;
+}
+.con .content .ready li div {
+  width: 100%;
+  float: left;
+}
+.con .content .ready li div .image {
+  width: 40%;
+  float: left;
+  height: 1.3rem;
+  position: relative;
+}
+.con .content .ready li div .image img {
+  width: 100%;
+  height: 100%;
+}
+.con .content .ready li div .image .mask {
+  width: 100%;
+  height: 12%;
+  background: black;
+  position: absolute;
+  padding: 0.03rem 0;
+  bottom: 0;
+  opacity: 0.6;
+  text-align: center;
+  display: none;
+}
+.con .content .ready li div .image .mask img {
+  width: 20%;
+}
+.con .content .ready li div .image .mask span {
+  color: white;
+  font-size: 0.08rem;
+}
+.con .content .ready li div .p1 {
+  width: 55%;
+  float: right;
+  padding: 0.03rem 0 0.03rem 0;
+  font-size: 0.09rem;
+}
+.con .content .ready li div .p1 span {
+  float: right;
+  font-size: 0.06rem;
+  color: #006ECC;
+}
+.con .content .ready li div .sp1 {
+  display: inline-block;
+  width: 55%;
+  float: right;
+  padding: 0.05rem 0;
+  font-size: 0.08rem;
+  color: #666666;
+}
+.con .content .ready li div .sp2 {
+  display: inline-block;
+  width: 55%;
+  float: right;
+  padding: 0.03rem 0;
+  font-size: 0.06rem;
+  color: #888888;
+}
+.con .content .ready li:first-child {
+  padding: 0;
+}
+.con .content .place-rank {
+  width: 100%;
+  float: left;
+}
+.con .content .place-rank .place {
+  width: 72%;
+  float: left;
+  height: 100%;
+}
+.con .content .place-rank .place .address-cinema {
+  font-size: 0.12rem;
+  padding: 0.15rem 0 0.06rem 0;
+}
+.con .content .place-rank .place .address-cinema span {
+  font-size: 0.05rem;
+  margin-left: 0.1rem;
+  color: #AAAAAA;
+}
+.con .content .place-rank .place .type-area {
+  padding: 0.09rem 0;
+  font-size: 0.05rem;
+  color: #AAAAAA;
+}
+.con .content .place-rank .place .type-area span {
+  display: inline-block;
+  padding: 0.02rem 0.03rem;
+  border-radius: 3px;
+  margin-left: 0.1rem;
+  cursor: pointer;
+}
+.con .content .place-rank .place .type-area .active {
+  color: white;
+  background: #006ECC;
+}
+.con .content .place-rank .place .conditions {
+  background: #F9F9F9;
+  color: #AAAAAA;
+  padding: 0.03rem 0.1rem;
+  font-size: 0.05rem;
+}
+.con .content .place-rank .place .conditions-cinema {
+  width: 100%;
+  float: left;
+  padding: 0.2rem 0;
+}
+.con .content .place-rank .place .conditions-cinema .cinema-img {
+  width: 12%;
+  float: left;
+  padding: 0.1rem 0;
+  border: 1px solid #AAAAAA;
+}
+.con .content .place-rank .place .conditions-cinema .cinema-img img {
+  width: 100%;
+}
+.con .content .place-rank .place .conditions-cinema .cinema-introduce {
+  width: 54%;
+  float: left;
+}
+.con .content .place-rank .place .conditions-cinema .cinema-introduce a {
+  display: inline-block;
+  width: 100%;
+  padding: 0 0.2rem 0.08rem 0.1rem;
+  font-size: 0.09rem;
+}
+.con .content .place-rank .place .conditions-cinema .cinema-introduce a:hover {
+  color: #006ECC;
+}
+.con .content .place-rank .place .conditions-cinema .cinema-introduce span {
+  color: #AAAAAA;
+  padding: 0.1rem 0.1rem;
+  font-size: 0.05rem;
+}
+.con .content .place-rank .place .conditions-cinema .price {
+  float: left;
+  padding: 0.1rem 0;
+}
+.con .content .place-rank .place .conditions-cinema .price .sp1 {
+  color: #FF7700;
+  font-size: 0.12rem;
+  padding: 0 0 0 0.16rem;
+}
+.con .content .place-rank .place .conditions-cinema .price .sp2 {
+  font-size: 0.06rem;
+  color: #AAAAAA;
+  display: inline-block;
+  padding: 0 0.25rem 0 0.05rem;
+}
+.con .content .place-rank .place .conditions-cinema .price .buy {
+  display: inline-block;
+  padding: 0.02rem 0.1rem;
+  font-size: 0.03rem;
+  background: #006ECC;
+  color: white;
+  cursor: pointer;
+  border-radius: 0.07rem;
+}
+.con .content .place-rank .RankAll {
+  float: left;
+  width: 27%;
+  border: 1px solid #F9F9F9;
+}
+.con .content .place-rank .RankAll .rank {
+  float: left;
+  width: 100%;
+}
+.con .content .place-rank .RankAll .rank .title {
+  font-size: 0.1rem;
+  background: #F9F9F9;
+  font-weight: 300;
+  padding: 0.07rem 0 0.05rem 0.1rem;
+}
+.con .content .place-rank .RankAll .rank .rank-name-session {
+  width: 100%;
+  border-bottom: 1px solid #F9F9F9;
+}
+.con .content .place-rank .RankAll .rank .rank-name-session span {
+  color: #AAAAAA;
+  display: inline-block;
+  padding: 0.04rem 0.03rem;
+  font-size: 0.05rem;
+  float: left;
+}
+.con .content .place-rank .RankAll .rank .rank-name-session .sp3 {
+  float: right;
+}
+.con .content .place-rank .RankAll .rank .rank-name-session .sp2 {
+  padding: 0.04rem 0.5rem;
+}
+.con .content .place-rank .RankAll .rank .week {
+  width: 100%;
+  float: left;
+}
+.con .content .place-rank .RankAll .rank .week li {
+  padding-left: 0.05rem;
+}
+.con .content .place-rank .RankAll .rank .week li .sp0 {
+  display: inline-block;
+  width: 100%;
+  color: #AAAAAA;
+  padding: 0.04rem 0;
+  font-size: 0.08rem;
+  float: left;
+}
+.con .content .place-rank .RankAll .rank .week li .sp0 .sp1 {
+  padding-left: 0.08rem;
+  cursor: pointer;
+}
+.con .content .place-rank .RankAll .rank .week li .sp0 .sp2 {
+  float: right;
+  padding-right: 0.05rem;
+}
+.con .content .place-rank .RankAll .rank .week li div {
+  width: 25%;
+  float: left;
+  padding-left: 0.1rem;
+  padding-bottom: 0.05rem;
+}
+.con .content .place-rank .RankAll .rank .week li div img {
+  width: 100%;
+  display: none;
+}
+.con .content .place-rank .RankAll .rank .week li div .show {
+  display: block;
+}
+.con .content .place-rank .RankAll .rank .hot li {
+  padding-left: 0.05rem;
+}
+.con .content .place-rank .RankAll .rank .hot li .sp0 {
+  display: inline-block;
+  width: 100%;
+  color: #AAAAAA;
+  font-size: 0.08rem;
+  float: left;
+}
+.con .content .place-rank .RankAll .rank .hot li .sp0 a {
+  display: inline-block;
+  padding-left: 0.08rem;
+  cursor: pointer;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.con .content .place-rank .RankAll .rank .hot li .sp3 {
+  display: inline-block;
+  width: 100%;
+  color: #AAAAAA;
+  padding: 0 0 0.09rem 0.12rem;
+  font-size: 0.05rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.con .content .place-rank .RankAll .rank .hot li:first-child {
+  padding-top: 0.05rem;
+}
+.con footer {
+  width: 100%;
+  float: left;
+  background: black;
+  margin-top: 0.2rem;
+  opacity: 0.8;
+  filter: alpha(opacity=80);
+  padding-top: 0.2rem;
+  color: white;
+}
+.con footer .title {
+  width: 20%;
+  float: left;
+  padding: 0.05rem 0.3rem 0 1.2rem;
+}
+.con footer .title img {
+  width: 43%;
+  float: right;
+}
+.con footer .help {
+  float: left;
+  border-left: 0.005rem dotted rgba(255, 255, 255, 0.5);
+  border-right: 0.005rem dotted rgba(255, 255, 255, 0.5);
+  padding: 0.1rem 0.9rem;
+}
+.con footer .help p {
+  font-size: 0.15rem;
+  padding-bottom: 0.05rem;
+  font-family: 宋体;
+  font-weight: 200;
+  opacity: 0.8;
+  filter: alpha(opacity=80);
+}
+.con footer .help a {
+  color: white;
+  font-size: 0.09rem;
+  display: inline-block;
+  padding: 0.05rem 0.05rem;
+  font-weight: 200;
+  opacity: 0.8;
+  filter: alpha(opacity=80);
+  cursor: pointer;
+}
+.con footer .wechat {
+  padding: 0.05rem 0 0 1rem;
+  width: 10%;
+  float: left;
+}
+.con footer .wechat img {
+  width: 50%;
+}
+.con footer .wechat p {
+  font-size: 0.05rem;
+  padding: 0.02rem 0 0 0.05rem;
+  opacity: 0.8;
+  filter: alpha(opacity=80);
+}
+.con .end {
+  float: left;
+  width: 100%;
+  background: #5E6168;
+  padding: 0.1rem 0;
+  text-align: center;
+}
+.con .end span {
+  color: #CCCCCC;
+  font-size: 0.05rem;
+}
+@media (min-width: 1150px) and (max-width: 1410px) {
+  .con .info {
+    width: 80%;
+  }
+  .con .info .top {
+    height: 1.8rem;
+  }
+  .con .info .introduce .title {
+    padding-top: 0.3rem;
+  }
+  .con .content {
+    width: 80%;
+  }
+  .con .content .movie {
+    height: 2.8rem;
+  }
+  .con .content .movie ul li {
+    width: 1.25rem;
+    padding-left: 0.23rem;
+  }
+  .con .content .movie ul li .listCon {
+    width: 1.35rem;
+    height: 1.85rem;
+  }
+  .con .content .movie ul li .listCon .mask span:first-child {
+    padding-top: 0.1rem;
+  }
+  .con .content .butn .before {
+    top: 0.95rem;
+  }
+  .con .content .butn .before span {
+    font-size: 0.25rem;
+    cursor: pointer;
+  }
+  .con .content .butn .next {
+    top: 0.95rem;
+  }
+  .con .content .butn .next span {
+    font-size: 0.25rem;
+    cursor: pointer;
+  }
+  .con .content .ready li {
+    padding: 0 0.13rem;
+  }
+  .con .content .ready li div .image {
+    height: 1.4rem;
+  }
+  .con .content .ready li div .image .mask {
+    padding: 0.03rem 0 0.07rem 0;
+  }
+  .con .content .ready li div .image .mask img {
+    width: 18%;
+  }
+  .con .content .ready li div .sp1 {
+    padding: 0.02rem 0;
+  }
+  .con .content .ready li div .sp2 {
+    padding: 0.02rem 0;
+  }
+}
