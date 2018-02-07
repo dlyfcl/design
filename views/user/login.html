@@ -9,8 +9,24 @@
     <script src="../javascripts/rem.js"></script>
     <link href="../stylesheets/base.css" rel="stylesheet">
     <link rel="stylesheet" href="../stylesheets/index.css">
+    <link rel="stylesheet" href="../stylesheets/login.css">
 </head>
 <body>
-    
+    <div class="con">
+        <form class="login-frame" action="" method="post">
+            <p>帅逼电影</p>
+            <div class="user-admin">
+                <span class="user active">用户</span>
+                <span class="admin">管理</span>
+            </div>
+            <input type="text" placeholder="请输入您的手机号" id="login-mobile" name="login-mobile">
+            <span class="tips"></span>
+            <input type="password" placeholder="密码为6-12位数字和英文组合" id="login-pwd" name="login-pwd">
+            <span class="tips"></span>
+            <input type="button" value="登录" id="login">
+            <span class="no">没有账号，<a class="registerNow">立即注册</a></span>
+        </form>
+        </div>
+    </div>
 </body>
 </html>

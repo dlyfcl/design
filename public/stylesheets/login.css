@@ -1,0 +1,76 @@
+body {
+  background: url("../images/bg.jpg");
+}
+.con .login-frame {
+  width: 20%;
+  margin: 1rem auto;
+  background: white;
+  padding: 0.08rem 0 1.2rem 0;
+}
+.con .login-frame p {
+  text-align: center;
+  width: 100%;
+  padding: 0.06rem 0;
+  font-family: 隶书;
+  font-size: 0.2rem;
+  font-weight: 200;
+}
+.con .login-frame .user-admin {
+  width: 100%;
+  text-align: center;
+  padding: 0.09rem 0;
+}
+.con .login-frame .user-admin span {
+  padding: 0.03rem 0.06rem;
+  color: #888888;
+  font-size: 0.06rem;
+  border: 1px solid #F6F6F6;
+  background: #F6F6F6;
+  cursor: pointer;
+}
+.con .login-frame .user-admin .active {
+  background: lightblue;
+  color: white;
+}
+.con .login-frame #login-mobile,
+.con .login-frame #login-pwd {
+  border: 1px solid #F6F6F6;
+  background: #F6F6F6;
+  padding: 0.06rem 0 0.06rem 0.05rem;
+  width: 66%;
+  margin: 0.08rem 0 0 16%;
+  font-size: 0.05rem;
+}
+.con .login-frame #login-pwd {
+  margin-top: 0.05rem;
+}
+.con .login-frame .tips {
+  display: inline-block;
+  padding: 0.03rem 0;
+  width: 66%;
+  margin: 0.05rem 0 0 16%;
+  font-size: 0.05rem;
+  height: 0.05rem;
+}
+.con .login-frame #login {
+  width: 66%;
+  margin: 0.05rem 0 0 16%;
+  padding: 0.05rem 0;
+  font-size: 0.08rem;
+  color: white;
+  font-family: 宋体;
+  background: #0aa7f6;
+}
+.con .login-frame .no {
+  display: inline-block;
+  padding: 0.25rem 0;
+  width: 66%;
+  margin: 0 0 0 16%;
+  font-size: 0.05rem;
+  height: 0.05rem;
+  text-align: center;
+}
+.con .login-frame .no .registerNow {
+  color: #0aa7f6;
+  cursor: pointer;
+}
