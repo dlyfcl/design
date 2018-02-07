@@ -74,3 +74,27 @@ body {
   color: #0aa7f6;
   cursor: pointer;
 }
+@media (min-width: 1150px) and (max-width: 1410px) {
+  .con .login-frame {
+    width: 35%;
+    padding: 0.08rem 0 3rem 0;
+  }
+  .con .login-frame p {
+    font-size: 0.23rem;
+  }
+  .con .login-frame #login-mobile,
+  .con .login-frame #login-pwd {
+    margin-top: 0.3rem;
+    padding: 0.08rem 0 0.08rem 0.05rem;
+  }
+  .con .login-frame #login-pwd {
+    margin-top: 0.2rem;
+  }
+  .con .login-frame .tips {
+    height: 0.15rem;
+  }
+  .con .login-frame #login {
+    padding: 0.08rem 0;
+    margin-top: 0.2rem;
+  }
+}
