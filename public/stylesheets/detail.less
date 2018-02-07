@@ -46,6 +46,7 @@
               background: rgba(0,0,0,0.6);
               text-align: center;
               padding: 0.02rem 0;
+              display: none;
               img{
                 width: 12%;
               }
@@ -95,21 +96,14 @@
   .detailContent{
     width: 65%;
     margin: auto;
-    border: 1px solid;
-    //float: left;
     padding: 0.15rem 0;
     .left{
       width: 72%;
       float: left;
-      //height: 100%;
-      border: 1px solid red;
       .arrange{
         font-size: 0.12rem;
         padding: 0.08rem 0;
         float: left;
-      }
-      .choosed{
-        border-bottom: 3px solid #006ECC;
       }
       .arrange:nth-child(2){
         margin-left: 0.2rem;
@@ -176,14 +170,126 @@
           padding: 0 0.15rem;
         }
       }
+      .Info{
+        padding: 0.08rem 0;
+        li{
+          .title{
+            width: 100%;
+            background: #F9F9F9;
+            padding: 0.05rem 0;
+            border: 1px solid #F9F9F9;
+            span{
+              font-size: 0.05rem;
+              color: #AAAAAA;
+              display: inline-block;
+              padding-left: 0.6rem;
+            }
+          }
+          .Detail{
+            width: 100%;
+            padding: 0.05rem 0;
+            border: 1px solid #F9F9F9;
+            span{
+              font-size: 0.05rem;
+              color: #888888;
+              display: inline-block;
+              padding: 0.05rem 0 0.05rem 0.5rem;
+            }
+            .ting,.price{
+              padding-left: 0.6rem;
+            }
+            .buy{
+              display: inline-block;
+              padding: 0.02rem 0.08rem;
+              font-size: 0.03rem;
+              background: #006ECC;
+              color: white;
+              cursor: pointer;
+              margin-left: 0.62rem;
+              border-radius: 0.07rem;
+            }
+          }
+          .Detail:hover{
+            background: #F9F9F9;
+          }
+        }
+      }
     }
     .right{
       float: left;
       width: 27%;
-      //border: 1px solid #F9F9F9;
-      border: 1px solid red;
+      border: 1px solid #F9F9F9;
       .head{
-        padding: 0.05rem 0 0.05rem 0.08rem;
+        font-size: 0.1rem;
+        background: #F9F9F9;
+        padding: 0.07rem 0 0.05rem 0.1rem;
+        span{
+          color: #006ECC;
+          font-size: 0.06rem;
+          float: right;
+          padding-right: 0.07rem;
+          cursor: pointer;
+          padding-top: 0.02rem;
+        }
+      }
+      .nowHot{
+        padding: 0.08rem 0.05rem 0.08rem 0.07rem;
+        li{
+          .hotInfo{
+            width: 100%;
+            padding: 0.06rem 0;
+            img{
+              width: 35%;
+              float: left;
+              cursor: pointer;
+            }
+            .zi{
+              width: 60%;
+              float: right;
+              .p1{
+                font-size: 0.09rem;
+                padding-bottom: 0.02rem;
+                span{
+                  color: #006ECC;
+                  font-size: 0.06rem;
+                  float: right;
+                  cursor: pointer;
+                  padding-top: 0.02rem;
+                }
+              }
+              .sp1{
+                font-size: 0.05rem;
+                color: #AAAAAA;
+                width: 100%;
+                display: inline-block;
+                overflow: hidden;
+                text-overflow:ellipsis;
+                padding-top: 0.03rem;
+                white-space: nowrap;
+              }
+              .sp2{
+                color: #FF7700;
+                font-size: 0.1rem;
+                padding-top: 0.03rem;
+                .sp3{
+                  color: #AAAAAA;
+                  font-size: 0.07rem;
+                }
+                .buy{
+                  display: inline-block;
+                  padding: 0.02rem 0.08rem;
+                  font-size: 0.03rem;
+                  background: #006ECC;
+                  color: white;
+                  cursor: pointer;
+                  float: right;
+                  border-radius: 0.07rem;
+                  display: none;
+                }
+              }
+            }
+          }
+        }
       }
     }
   }

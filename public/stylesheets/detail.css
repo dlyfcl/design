@@ -50,6 +50,7 @@
   background: rgba(0, 0, 0, 0.6);
   text-align: center;
   padding: 0.02rem 0;
+  display: none;
 }
 .con .detailHead .Mask .listCon .container .left .mask img {
   width: 12%;
@@ -98,21 +99,16 @@
 .con .detailContent {
   width: 65%;
   margin: auto;
-  border: 1px solid;
   padding: 0.15rem 0;
 }
 .con .detailContent .left {
   width: 72%;
   float: left;
-  border: 1px solid red;
 }
 .con .detailContent .left .arrange {
   font-size: 0.12rem;
   padding: 0.08rem 0;
   float: left;
-}
-.con .detailContent .left .choosed {
-  border-bottom: 3px solid #006ECC;
 }
 .con .detailContent .left .arrange:nth-child(2) {
   margin-left: 0.2rem;
@@ -179,11 +175,121 @@
 .con .detailContent .left .address .tel {
   padding: 0 0.15rem;
 }
+.con .detailContent .left .Info {
+  padding: 0.08rem 0;
+}
+.con .detailContent .left .Info li .title {
+  width: 100%;
+  background: #F9F9F9;
+  padding: 0.05rem 0;
+  border: 1px solid #F9F9F9;
+}
+.con .detailContent .left .Info li .title span {
+  font-size: 0.05rem;
+  color: #AAAAAA;
+  display: inline-block;
+  padding-left: 0.6rem;
+}
+.con .detailContent .left .Info li .Detail {
+  width: 100%;
+  padding: 0.05rem 0;
+  border: 1px solid #F9F9F9;
+}
+.con .detailContent .left .Info li .Detail span {
+  font-size: 0.05rem;
+  color: #888888;
+  display: inline-block;
+  padding: 0.05rem 0 0.05rem 0.5rem;
+}
+.con .detailContent .left .Info li .Detail .ting,
+.con .detailContent .left .Info li .Detail .price {
+  padding-left: 0.6rem;
+}
+.con .detailContent .left .Info li .Detail .buy {
+  display: inline-block;
+  padding: 0.02rem 0.08rem;
+  font-size: 0.03rem;
+  background: #006ECC;
+  color: white;
+  cursor: pointer;
+  margin-left: 0.62rem;
+  border-radius: 0.07rem;
+}
+.con .detailContent .left .Info li .Detail:hover {
+  background: #F9F9F9;
+}
 .con .detailContent .right {
   float: left;
   width: 27%;
-  border: 1px solid red;
+  border: 1px solid #F9F9F9;
 }
 .con .detailContent .right .head {
-  padding: 0.05rem 0 0.05rem 0.08rem;
+  font-size: 0.1rem;
+  background: #F9F9F9;
+  padding: 0.07rem 0 0.05rem 0.1rem;
+}
+.con .detailContent .right .head span {
+  color: #006ECC;
+  font-size: 0.06rem;
+  float: right;
+  padding-right: 0.07rem;
+  cursor: pointer;
+  padding-top: 0.02rem;
+}
+.con .detailContent .right .nowHot {
+  padding: 0.08rem 0.05rem 0.08rem 0.07rem;
+}
+.con .detailContent .right .nowHot li .hotInfo {
+  width: 100%;
+  padding: 0.06rem 0;
+}
+.con .detailContent .right .nowHot li .hotInfo img {
+  width: 35%;
+  float: left;
+  cursor: pointer;
+}
+.con .detailContent .right .nowHot li .hotInfo .zi {
+  width: 60%;
+  float: right;
+}
+.con .detailContent .right .nowHot li .hotInfo .zi .p1 {
+  font-size: 0.09rem;
+  padding-bottom: 0.02rem;
+}
+.con .detailContent .right .nowHot li .hotInfo .zi .p1 span {
+  color: #006ECC;
+  font-size: 0.06rem;
+  float: right;
+  cursor: pointer;
+  padding-top: 0.02rem;
+}
+.con .detailContent .right .nowHot li .hotInfo .zi .sp1 {
+  font-size: 0.05rem;
+  color: #AAAAAA;
+  width: 100%;
+  display: inline-block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding-top: 0.03rem;
+  white-space: nowrap;
+}
+.con .detailContent .right .nowHot li .hotInfo .zi .sp2 {
+  color: #FF7700;
+  font-size: 0.1rem;
+  padding-top: 0.03rem;
+}
+.con .detailContent .right .nowHot li .hotInfo .zi .sp2 .sp3 {
+  color: #AAAAAA;
+  font-size: 0.07rem;
+}
+.con .detailContent .right .nowHot li .hotInfo .zi .sp2 .buy {
+  display: inline-block;
+  padding: 0.02rem 0.08rem;
+  font-size: 0.03rem;
+  background: #006ECC;
+  color: white;
+  cursor: pointer;
+  float: right;
+  border-radius: 0.07rem;
+  display: none;
 }
