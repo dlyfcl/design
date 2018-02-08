@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>
@@ -11,9 +12,10 @@
     <link rel="stylesheet" href="../stylesheets/index.css">
     <link rel="stylesheet" href="../stylesheets/login.css">
 </head>
+
 <body>
     <div class="con">
-        <form class="login-frame" action="" method="post">
+        <form class="login-frame" method="post">
             <p>帅逼电影</p>
             <div class="user-admin">
                 <span class="user active">用户</span>
@@ -24,9 +26,41 @@
             <input type="password" placeholder="密码为6-12位数字和英文组合" id="login-pwd" name="login-pwd">
             <span class="tips"></span>
             <input type="button" value="登录" id="login">
-            <span class="no">没有账号，<a class="registerNow">立即注册</a></span>
+            <span class="no">没有账号，
+                <a class="registerNow">立即注册</a>
+            </span>
         </form>
-        </div>
     </div>
+    </div>
+    <script src="../javascripts/jquery-1.8.3.min.js"></script>
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <!-- <script src="../javascripts/login.js"></script> -->
+    <script>
+        $(function () {
+            $('#login').on('click', function () {
+                console.log('inside login.js')
+                $.ajax({
+                    type: 'post',
+                    url: '/users/login',
+                    async: false,
+                    data: {
+                        'action': 'login',
+                        'mobile': $('#login-mobile').val(),
+                        'pwd': $('#login-pwd').val()
+                    },
+                    error: function (err) {
+                        console.log(err)
+                    },
+                    success: function (data) {
+                        console.log('login.js huo de data =' + data)
+                        if (data === "ok") {
+                            location.href = ('/user/register')
+                        }
+                    }
+                })
+            })
+        })
+    </script>
 </body>
+
 </html>
