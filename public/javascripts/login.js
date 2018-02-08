@@ -15,7 +15,9 @@ $(function () {
       },
       success: function (data) {
         console.log('login.js huo de data =' + data)
-      // location.href = ('/user/register')
+        if (data === 'ok') {
+          location.href = ('/user/register')
+        }
       }
     })
   })
