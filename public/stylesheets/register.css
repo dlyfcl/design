@@ -1,0 +1,121 @@
+body {
+  background: url("../images/bg.jpg");
+}
+.con .register-frame {
+  box-shadow: 10px 10px 5px #888888;
+  width: 25%;
+  margin: 0.5rem auto;
+  background: white;
+  padding: 0.08rem 0 1.1rem 0;
+}
+.con .register-frame p {
+  text-align: center;
+  width: 100%;
+  padding: 0.06rem 0;
+  font-family: 隶书;
+  font-size: 0.2rem;
+  font-weight: 200;
+}
+.con .register-frame .user-admin {
+  width: 100%;
+  text-align: center;
+  padding: 0.09rem 0;
+}
+.con .register-frame .user-admin span {
+  padding: 0.03rem 0.06rem;
+  color: #888888;
+  font-size: 0.06rem;
+  border: 1px solid #F6F6F6;
+  background: #F6F6F6;
+  cursor: pointer;
+}
+.con .register-frame .user-admin .active {
+  background: lightblue;
+  color: white;
+}
+.con .register-frame .register-info {
+  width: 66%;
+  margin: 0 0 0 16%;
+}
+.con .register-frame .register-info input {
+  border: 1px solid #F6F6F6;
+  background: #F6F6F6;
+  padding: 0.06rem 0 0.06rem 0.05rem;
+  font-size: 0.05rem;
+  width: 100%;
+}
+.con .register-frame .register-info .tips {
+  display: inline-block;
+  width: 100%;
+  line-height: 0.1rem;
+  font-size: 0.05rem;
+  height: 0.1rem;
+  color: red;
+}
+.con .register-frame .first {
+  margin-top: 0.1rem;
+}
+.con .register-frame .verification {
+  padding: 0.06rem 0 0.06rem 0;
+  width: 66%;
+  margin: 0.02rem 0 0 16%;
+  font-size: 0.05rem;
+}
+.con .register-frame .verification input {
+  width: 50%;
+  border: 1px solid #F6F6F6;
+  background: #F6F6F6;
+  padding: 0.06rem 0;
+}
+.con .register-frame .verification span {
+  color: #0aa7f6;
+  float: left;
+  display: inline-block;
+  width: 100%;
+  padding: 0.06rem 0;
+  cursor: pointer;
+}
+.con .register-frame .verification #yz {
+  width: 40%;
+  border: 1px solid #888888;
+  text-align: center;
+  height: 0.22rem;
+  float: right;
+  margin-top: 0.02rem;
+  line-height: 0.22rem;
+  font-size: 0.13rem;
+  font-style: italic;
+  color: blue;
+}
+.con .register-frame .verification .tips {
+  display: inline-block;
+  padding-left: 0.03rem;
+  width: 100%;
+  line-height: 0.1rem;
+  font-size: 0.05rem;
+  height: 0.1rem;
+  color: red;
+}
+.con .register-frame #register {
+  width: 66%;
+  margin: 0.05rem 0 0 16%;
+  padding: 0.05rem 0;
+  font-size: 0.08rem;
+  color: white;
+  font-family: 宋体;
+  background: #0aa7f6;
+  cursor: pointer;
+}
+.con .register-frame .no {
+  display: inline-block;
+  padding: 0.25rem 0;
+  width: 66%;
+  margin: 0 0 0 16%;
+  font-size: 0.05rem;
+  height: 0.05rem;
+  text-align: center;
+}
+.con .register-frame .no .loginNow {
+  color: #0aa7f6;
+  cursor: pointer;
+}

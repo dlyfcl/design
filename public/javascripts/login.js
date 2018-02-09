@@ -15,8 +15,14 @@ $(function () {
       },
       success: function (data) {
         console.log('login.js huo de data =' + data)
-        if (data === 'ok') {
+        if (data === 'login-ok') {
           location.href = ('/user/register')
+        }else if (data === 'login-no') {
+          alert('该手机号尚未注册，请前往注册')
+        }else if(data === "error"){
+          alert('username error')
+        }else{
+          alert('error')
         }
       }
     })

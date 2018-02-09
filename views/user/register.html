@@ -6,10 +6,57 @@
     <title>
         <%=title%>
     </title>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <script src="../javascripts/rem.js"></script>
+    <link href="../stylesheets/base.css" rel="stylesheet">
+    <link rel="stylesheet" href="../stylesheets/index.css">
+    <link rel="stylesheet" href="../stylesheets/register.css">
 </head>
 
 <body>
+    <div class="con">
+        <div class="register-frame">
+            <form class="login-frame" method="post">
+                <p>注册帅比电影</p>
+                <div class="user-admin">
+                    <span class="user active">用户</span>
+                    <span class="admin">管理</span>
+                </div>
+                <div class="register-info first">
+                    <input type="text" placeholder="您的手机号" id="register-mobile" name="register-mobile">
+                    <span class="tips"></span>
+                </div>
 
+                <div class="register-info">
+                    <input type="password" placeholder="密码为6-12位数字和英文组合" id="register-pwd" name="register-pwd">
+                    <span class="tips"></span>
+                </div>
+
+                <div class="register-info">
+                    <input type="password" placeholder="请再次数入密码" id="register-pwdAgain" name="register-pwdAgain">
+                    <span class="tips"></span>
+                </div>
+
+
+                <div class="verification">
+                    <input type="text" placeholder="请输入验证码" id="code">
+                    <div id="yz">
+
+                    </div>
+                    <span class="change">看不清，换一张</span>
+                    <span class="tips"></span>
+                </div>
+
+                <input type="button" value="注册" id="register">
+                <span class="no">已有账号，
+                    <a class="loginNow">立即登录</a>
+                </span>
+            </form>
+        </div>
+    </div>
+
+    <script src="../javascripts/jquery-1.8.3.min.js"></script>
+    <script src="../javascripts/register.js"></script>
 </body>
 
 </html>

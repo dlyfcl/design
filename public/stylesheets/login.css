@@ -2,10 +2,11 @@ body {
   background: url("../images/bg.jpg");
 }
 .con .login-frame {
-  width: 20%;
-  margin: 1rem auto;
+  box-shadow: 10px 10px 5px #888888;
+  width: 25%;
+  margin: 0.4rem auto;
   background: white;
-  padding: 0.08rem 0 1.2rem 0;
+  padding: 0.08rem 0 1.7rem 0;
 }
 .con .login-frame p {
   text-align: center;
@@ -60,6 +61,7 @@ body {
   color: white;
   font-family: 宋体;
   background: #0aa7f6;
+  cursor: pointer;
 }
 .con .login-frame .no {
   display: inline-block;
