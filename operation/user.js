@@ -15,7 +15,7 @@ function login (req, res) {
   console.log('inside operation login')
   database(function (con) {
     console.log('inside database login')
-    var sql = "SELECT * FROM user WHERE mobile = '" + req.body.mobile + "';"
+    var sql = 'SELECT * FROM user WHERE mobile = \'' + req.body.mobile + '\';';
     con.query(sql, function (err, result) {
       if (err) {
         console.log(err)
@@ -37,7 +37,7 @@ function login (req, res) {
 function register (req, res) {
   console.log('inside operation register')
   database(function (con) {
-    var sql = "SELECT mobile FROM user WHERE mobile = '" + req.body.mobile + "';"
+    var sql = 'SELECT mobile FROM user WHERE mobile = \'' + req.body.mobile + '\';';
     con.query(sql, function (err, result) {
       if (err) {
         console.log(err)
@@ -45,7 +45,7 @@ function register (req, res) {
       if (result.length !== 0) {
         res.send('register-no')
       }else {
-        var sql2 = "INSERT INTO user (mobile, password) VALUES('" + req.body.mobile + "','" + req.body.pwd + "');"
+        var sql2 = 'INSERT INTO user (username, password) VALUES(\'' + req.body.mobile + '\',\'' + req.body.pwd + '\');';
         con.query(sql2, function (err, result) {
           if (err) {
             console.log(err)
