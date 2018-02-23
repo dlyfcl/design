@@ -45,7 +45,7 @@ function register (req, res) {
       if (result.length !== 0) {
         res.send('register-no')
       }else {
-        var sql2 = 'INSERT INTO user (username, password) VALUES(\'' + req.body.mobile + '\',\'' + req.body.pwd + '\');';
+        var sql2 = 'INSERT INTO user (mobile, password) VALUES(\'' + req.body.mobile + '\',\'' + req.body.pwd + '\');';
         con.query(sql2, function (err, result) {
           if (err) {
             console.log(err)
