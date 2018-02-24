@@ -5,43 +5,43 @@
 .con .nav {
   width: 100%;
   float: left;
+  text-align: center;
+  background: url(../images/dh.jpg) left top no-repeat;
+  background-size: cover;
 }
-.con .nav img {
-  width: 2%;
+.con .nav #nav {
+  list-style-type: none;
+  padding: 0;
   float: left;
-  cursor: pointer;
-  margin-left: 10%;
-  vertical-align: middle;
+  margin-left: 28%;
 }
-.con .nav ul {
+.con .nav #nav li {
   float: left;
-  width: 80%;
-  margin-left: 5%;
-}
-.con .nav ul li {
-  float: left;
-  height: 100%;
-  padding: 0.03rem 0.2rem;
-  margin-left: 5%;
-  cursor: pointer;
-  font-size: 0.1rem;
-}
-.con .nav ul .login,
-.con .nav ul .register {
-  padding: 0.045rem 0.1rem;
+  background: url(../images/x.jpg) center right no-repeat;
+  padding: 0.05rem 0.1rem;
+  margin: 0;
   font-size: 0.08rem;
 }
-.con .nav ul .register {
-  margin-left: 15%;
-}
-.con .nav ul .login {
-  margin-left: 0;
+.con .nav #nav li a {
+  color: white;
+  display: inline-block;
+  width: 100%;
+  height: 100%;
 }
 .con .shuffling {
   width: 100%;
 }
-.con .shuffling img {
+.con .shuffling .head {
   width: 100%;
+  float: left;
+  height: 2rem;
+  position: relative;
+}
+.con .shuffling .head img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
 }
 .con .shuffling .before,
 .con .shuffling .next {
@@ -75,8 +75,8 @@
 .con .info {
   width: 65%;
   margin: auto;
-  border-bottom: 2px solid #006ECC;
   position: relative;
+  border: 1px solid red;
 }
 .con .info .top {
   width: 16%;
@@ -97,16 +97,20 @@
   cursor: pointer;
   left: 0;
 }
-.con .info .detail {
+.con .info .infoBody {
+  border: 1px solid blue;
+  float: left;
+}
+.con .info .infoBody .detail {
   width: 63%;
   margin-left: 18%;
   float: left;
   padding: 0.15rem 0 0 3%;
 }
-.con .info .detail .name {
+.con .info .infoBody .detail .name {
   font-size: 0.15rem;
 }
-.con .info .detail .actor {
+.con .info .infoBody .detail .actor {
   display: inline-block;
   padding: 0.08rem 0 0 0;
   font-size: 0.08rem;
@@ -114,13 +118,13 @@
   line-height: 0.15rem;
   color: #AAAAAA;
 }
-.con .info .detail .actor span {
+.con .info .infoBody .detail .actor span {
   margin: 0 0.4rem;
 }
-.con .info .detail .address {
+.con .info .infoBody .detail .address {
   padding: 0.08rem 0 0 0;
 }
-.con .info .detail .address a {
+.con .info .infoBody .detail .address a {
   font-size: 0.08rem;
   display: inline-block;
   width: 20%;
@@ -128,7 +132,7 @@
   padding-top: 0.05rem;
   color: #666;
 }
-.con .info .detail .address ul li {
+.con .info .infoBody .detail .address ul li {
   float: left;
   padding: 0.02rem 0.05rem;
   margin-left: 20px;
@@ -136,27 +140,27 @@
   border-radius: 3px;
   background: #F6F6F6;
 }
-.con .info .detail .address ul li span {
+.con .info .infoBody .detail .address ul li span {
   font-size: 0.08rem;
 }
-.con .info .detail .address ul li .sp2 {
+.con .info .infoBody .detail .address ul li .sp2 {
   margin-left: 0.05rem;
   color: lightcoral;
 }
-.con .info .price {
+.con .info .infoBody .price {
   width: 15%;
   float: left;
   padding: 0.2rem 0;
   text-align: center;
 }
-.con .info .price .sp1 {
+.con .info .infoBody .price .sp1 {
   font-size: 0.3rem;
   color: #FFC000;
 }
-.con .info .price .sp2 {
+.con .info .infoBody .price .sp2 {
   color: #AAAAAA;
 }
-.con .info .price p {
+.con .info .infoBody .price p {
   font-size: 0.1rem;
   background: #006ECC;
   color: white;
@@ -166,15 +170,15 @@
   padding: 0.05rem 0;
   cursor: pointer;
 }
-.con .info .introduce {
+.con .info .infoBody .introduce {
   width: 100%;
   float: left;
 }
-.con .info .introduce .title {
+.con .info .infoBody .introduce .title {
   width: 16%;
   padding: 0.1rem 0.05rem 0.05rem 0.05rem;
 }
-.con .info .introduce .title a {
+.con .info .infoBody .introduce .title a {
   cursor: pointer;
   width: 78%;
   display: inline-block;
@@ -185,10 +189,10 @@
   text-overflow: ellipsis;
   white-space: nowrap;
 }
-.con .info .introduce .title a:hover {
+.con .info .infoBody .introduce .title a:hover {
   color: #006ECC;
 }
-.con .info .introduce .title .sp1 {
+.con .info .infoBody .introduce .title .sp1 {
   margin-left: 2%;
   margin-top: 0.08rem;
   float: left;
@@ -197,7 +201,7 @@
   font-size: 0.02rem;
   color: #006ECC;
 }
-.con .info .introduce .title .sp2 {
+.con .info .infoBody .introduce .title .sp2 {
   display: inline-block;
   width: 100%;
   padding: 0.03rem 0;

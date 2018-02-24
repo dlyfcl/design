@@ -2,43 +2,44 @@
     width: 100%;
     float: left;
     .nav{
-      width:100%;
+      width: 100%;
       float: left;
-      img{
-        width: 2%;
+      text-align: center;
+      background:url(../images/dh.jpg) left top no-repeat;
+      background-size: cover;
+      #nav{
+        list-style-type: none;
+        padding:0;
         float: left;
-        cursor: pointer;
-        margin-left: 10%;
-        vertical-align: middle;
-      }
-      ul{
-        float: left;
-        width: 80%;
-        margin-left: 5%;
+        margin-left: 28%;
         li{
           float: left;
-          height: 100%;
-          padding: 0.03rem 0.2rem;
-          margin-left: 5%;
-          cursor: pointer;
-          font-size: 0.1rem;
-        }
-        .login,.register{
-          padding: 0.045rem 0.1rem;
+          background:url(../images/x.jpg) center right no-repeat;
+          padding: 0.05rem 0.1rem;
+          margin:0;
           font-size: 0.08rem;
-        }
-        .register{
-          margin-left: 15%;
-        }
-        .login{
-          margin-left: 0;
+          a{
+            color: white;
+            display: inline-block;
+            width: 100%;
+            height: 100%;
+          }
         }
       }
     }
     .shuffling{
       width: 100%;
-      img{
+      .head{
         width: 100%;
+        float: left;
+        height: 2rem;
+        position: relative;
+        img{
+          width: 100%;
+          height: 100%;
+          position: absolute;
+          top: 0;
+        }
       }
       .before,.next{
         float: left;
@@ -71,8 +72,9 @@
     .info{
       width: 65%;
       margin:  auto;
-      border-bottom: 2px solid #006ECC;
+      //border-bottom: 2px solid #006ECC;
       position: relative;
+      border: 1px solid red;
       .top{
         width: 16%;
         padding: 0.05rem;
@@ -92,109 +94,113 @@
           left: 0;
         }
       }
-      .detail{
-        width: 63%;
-        margin-left: 18%;
+      .infoBody{
+        border: 1px solid blue;
         float: left;
-        padding: 0.15rem 0 0 3%;
-        .name{
-          font-size: 0.15rem;
-        }
-        .actor{
-          display: inline-block;
-          padding: 0.08rem 0 0 0;
-          font-size: 0.08rem;
-          letter-spacing:0.005rem;
-          line-height: 0.15rem;
-          color: #AAAAAA;
-          span{
-            margin: 0 0.4rem;
+        .detail{
+          width: 63%;
+          margin-left: 18%;
+          float: left;
+          padding: 0.15rem 0 0 3%;
+          .name{
+            font-size: 0.15rem;
           }
-        }
-        .address{
-          padding: 0.08rem 0 0 0;
-          a{
+          .actor{
+            display: inline-block;
+            padding: 0.08rem 0 0 0;
             font-size: 0.08rem;
-            display: inline-block;
-            width: 20%;
-            float: left;
-            padding-top: 0.05rem;
-            color: #666;
-          }
-          ul li{
-            float: left;
-            padding: 0.02rem 0.05rem;
-            margin-left: 20px;
-            cursor: pointer;
-            border-radius: 3px;
-            background: #F6F6F6;
+            letter-spacing:0.005rem;
+            line-height: 0.15rem;
+            color: #AAAAAA;
             span{
+              margin: 0 0.4rem;
+            }
+          }
+          .address{
+            padding: 0.08rem 0 0 0;
+            a{
               font-size: 0.08rem;
+              display: inline-block;
+              width: 20%;
+              float: left;
+              padding-top: 0.05rem;
+              color: #666;
             }
-            .sp2{
-              margin-left: 0.05rem;
-              color: lightcoral;
+            ul li{
+              float: left;
+              padding: 0.02rem 0.05rem;
+              margin-left: 20px;
+              cursor: pointer;
+              border-radius: 3px;
+              background: #F6F6F6;
+              span{
+                font-size: 0.08rem;
+              }
+              .sp2{
+                margin-left: 0.05rem;
+                color: lightcoral;
+              }
             }
           }
         }
-      }
-      .price{
-        width: 15%;
-        float: left;
-        padding: 0.2rem 0;
-        text-align: center;
-        .sp1{
-          font-size: 0.3rem;
-          color: #FFC000;
-        }
-        .sp2{
-          color: #AAAAAA;
-        }
-        p{
-          font-size: 0.1rem;
-          background: #006ECC;
-          color: white;
-          width: 62%;
-          margin-left: 19%;
-          border-radius: 20px;
-          padding: 0.05rem 0;
-          cursor: pointer;
-        }
-      }
-      .introduce{
-        width: 100%;
-        float: left;
-        .title{
-          width: 16%;
-          padding: 0.1rem 0.05rem 0.05rem 0.05rem;
-          a{
-            cursor: pointer;
-            width: 78%;
-            display: inline-block;
-            font-size: 0.1rem;
-            font-weight: bold;
-            float: left;
-            overflow: hidden;
-            text-overflow:ellipsis;
-            white-space: nowrap;
-          }
-          a:hover{
-            color: #006ECC;
-          }
+        .price{
+          width: 15%;
+          float: left;
+          padding: 0.2rem 0;
+          text-align: center;
           .sp1{
-            margin-left: 2%;
-            margin-top: 0.08rem;
-            float: left;
-            display: inline-block;
-            width: 20%;
-            font-size: 0.02rem;
-            color: #006ECC;
+            font-size: 0.3rem;
+            color: #FFC000;
           }
           .sp2{
-            display: inline-block;
-            width: 100%;
-            padding: 0.03rem 0;
-            font-size: 0.02rem;
+            color: #AAAAAA;
+          }
+          p{
+            font-size: 0.1rem;
+            background: #006ECC;
+            color: white;
+            width: 62%;
+            margin-left: 19%;
+            border-radius: 20px;
+            padding: 0.05rem 0;
+            cursor: pointer;
+          }
+        }
+        .introduce{
+          width: 100%;
+          float: left;
+          .title{
+            width: 16%;
+            padding: 0.1rem 0.05rem 0.05rem 0.05rem;
+            a{
+              cursor: pointer;
+              width: 78%;
+              display: inline-block;
+              font-size: 0.1rem;
+              font-weight: bold;
+              float: left;
+              overflow: hidden;
+              text-overflow:ellipsis;
+              white-space: nowrap;
+            }
+            a:hover{
+              color: #006ECC;
+            }
+            .sp1{
+              margin-left: 2%;
+              margin-top: 0.08rem;
+              float: left;
+              display: inline-block;
+              width: 20%;
+              font-size: 0.02rem;
+              color: #006ECC;
+            }
+            .sp2{
+              display: inline-block;
+              width: 100%;
+              padding: 0.03rem 0;
+              font-size: 0.02rem;
+            }
           }
         }
       }

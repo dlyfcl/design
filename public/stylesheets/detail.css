@@ -1,5 +1,6 @@
 .con .detailHead {
   width: 100%;
+  float: left;
   position: relative;
 }
 .con .detailHead img {
