@@ -30,6 +30,7 @@
 }
 .con .shuffling {
   width: 100%;
+  cursor: pointer;
 }
 .con .shuffling .head {
   width: 100%;
@@ -75,8 +76,8 @@
 .con .info {
   width: 65%;
   margin: auto;
+  border-bottom: 2px solid #006ECC;
   position: relative;
-  border: 1px solid red;
 }
 .con .info .top {
   width: 16%;
@@ -97,20 +98,19 @@
   cursor: pointer;
   left: 0;
 }
-.con .info .infoBody {
-  border: 1px solid blue;
+.con .info session {
   float: left;
 }
-.con .info .infoBody .detail {
+.con .info session .detail {
   width: 63%;
   margin-left: 18%;
   float: left;
   padding: 0.15rem 0 0 3%;
 }
-.con .info .infoBody .detail .name {
+.con .info session .detail .name {
   font-size: 0.15rem;
 }
-.con .info .infoBody .detail .actor {
+.con .info session .detail .actor {
   display: inline-block;
   padding: 0.08rem 0 0 0;
   font-size: 0.08rem;
@@ -118,13 +118,13 @@
   line-height: 0.15rem;
   color: #AAAAAA;
 }
-.con .info .infoBody .detail .actor span {
+.con .info session .detail .actor span {
   margin: 0 0.4rem;
 }
-.con .info .infoBody .detail .address {
+.con .info session .detail .address {
   padding: 0.08rem 0 0 0;
 }
-.con .info .infoBody .detail .address a {
+.con .info session .detail .address a {
   font-size: 0.08rem;
   display: inline-block;
   width: 20%;
@@ -132,7 +132,7 @@
   padding-top: 0.05rem;
   color: #666;
 }
-.con .info .infoBody .detail .address ul li {
+.con .info session .detail .address ul li {
   float: left;
   padding: 0.02rem 0.05rem;
   margin-left: 20px;
@@ -140,27 +140,27 @@
   border-radius: 3px;
   background: #F6F6F6;
 }
-.con .info .infoBody .detail .address ul li span {
+.con .info session .detail .address ul li span {
   font-size: 0.08rem;
 }
-.con .info .infoBody .detail .address ul li .sp2 {
+.con .info session .detail .address ul li .sp2 {
   margin-left: 0.05rem;
   color: lightcoral;
 }
-.con .info .infoBody .price {
+.con .info session .price {
   width: 15%;
   float: left;
   padding: 0.2rem 0;
   text-align: center;
 }
-.con .info .infoBody .price .sp1 {
+.con .info session .price .sp1 {
   font-size: 0.3rem;
   color: #FFC000;
 }
-.con .info .infoBody .price .sp2 {
+.con .info session .price .sp2 {
   color: #AAAAAA;
 }
-.con .info .infoBody .price p {
+.con .info session .price p {
   font-size: 0.1rem;
   background: #006ECC;
   color: white;
@@ -170,15 +170,15 @@
   padding: 0.05rem 0;
   cursor: pointer;
 }
-.con .info .infoBody .introduce {
+.con .info session .introduce {
   width: 100%;
   float: left;
 }
-.con .info .infoBody .introduce .title {
+.con .info session .introduce .title {
   width: 16%;
   padding: 0.1rem 0.05rem 0.05rem 0.05rem;
 }
-.con .info .infoBody .introduce .title a {
+.con .info session .introduce .title a {
   cursor: pointer;
   width: 78%;
   display: inline-block;
@@ -189,10 +189,10 @@
   text-overflow: ellipsis;
   white-space: nowrap;
 }
-.con .info .infoBody .introduce .title a:hover {
+.con .info session .introduce .title a:hover {
   color: #006ECC;
 }
-.con .info .infoBody .introduce .title .sp1 {
+.con .info session .introduce .title .sp1 {
   margin-left: 2%;
   margin-top: 0.08rem;
   float: left;
@@ -201,11 +201,17 @@
   font-size: 0.02rem;
   color: #006ECC;
 }
-.con .info .infoBody .introduce .title .sp2 {
+.con .info session .introduce .title .sp2 {
   display: inline-block;
   width: 100%;
   padding: 0.03rem 0;
   font-size: 0.02rem;
+}
+.con .info .hide {
+  display: none;
+}
+.con .info .show {
+  display: block;
 }
 .con .content {
   width: 65%;

@@ -4,9 +4,9 @@ body {
 .con .register-frame {
   box-shadow: 10px 10px 5px #888888;
   width: 25%;
-  margin: 0.5rem auto;
+  margin: 0.7rem auto;
   background: white;
-  padding: 0.08rem 0 1.1rem 0;
+  padding: 0.08rem 0 0.8rem 0;
 }
 .con .register-frame p {
   text-align: center;

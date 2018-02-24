@@ -29,6 +29,7 @@
     }
     .shuffling{
       width: 100%;
+      cursor: pointer;
       .head{
         width: 100%;
         float: left;
@@ -72,9 +73,8 @@
     .info{
       width: 65%;
       margin:  auto;
-      //border-bottom: 2px solid #006ECC;
+      border-bottom: 2px solid #006ECC;
       position: relative;
-      border: 1px solid red;
       .top{
         width: 16%;
         padding: 0.05rem;
@@ -94,8 +94,7 @@
           left: 0;
         }
       }
-      .infoBody{
-        border: 1px solid blue;
+      session{
         float: left;
         .detail{
           width: 63%;
@@ -203,6 +202,12 @@
             }
           }
         }
+      }
+      .hide{
+        display: none;
+      }
+      .show{
+        display: block;
       }
     }
     .content{

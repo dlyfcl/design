@@ -1,9 +1,9 @@
-var database = require('../database/basic')
-var cb = require('./cb').cb
-console.log('inside operation')
+var database = require('../database/basic');
+var cb = require('./cb').cb;
+console.log('inside operation');
 function User (req, res) {
-  console.log('inside operation User')
-  console.log(req.body)
+  console.log('inside operation User');
+  console.log(req.body);
   if (req.body.action === 'login') {
     login(req, res)
   }else {
@@ -12,15 +12,15 @@ function User (req, res) {
 }
 
 function login (req, res) {
-  console.log('inside operation login')
+  console.log('inside operation login');
   database(function (con) {
-    console.log('inside database login')
+    console.log('inside database login');
     var sql = 'SELECT * FROM user WHERE mobile = \'' + req.body.mobile + '\';';
     con.query(sql, function (err, result) {
       if (err) {
         console.log(err)
       }
-      console.log(result)
+      console.log(result);
       if (result.length !== 0) {
         if(result[0].mobile === req.body.mobile && result[0].password === req.body.pwd){
           res.send('login-ok')
@@ -35,7 +35,7 @@ function login (req, res) {
 }
 
 function register (req, res) {
-  console.log('inside operation register')
+  console.log('inside operation register');
   database(function (con) {
     var sql = 'SELECT mobile FROM user WHERE mobile = \'' + req.body.mobile + '\';';
     con.query(sql, function (err, result) {
@@ -56,4 +56,4 @@ function register (req, res) {
     })
   }, 'cinemaSystem')
 }
-module.exports = User
+module.exports = User;

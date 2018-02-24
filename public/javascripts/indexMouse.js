@@ -1,24 +1,4 @@
 $(function () {
-  // 鼠标移入移出显示前后按钮
-  $('.shuffling').mouseenter(function () {
-    $('.shuffling .before').css({
-      display: 'block'
-    });
-    $('.shuffling .next').css({
-      display: 'block'
-    })
-  });
-  $('.shuffling').mouseleave(function () {
-    $('.shuffling .before').css({
-      display: 'none'
-    });
-    $('.shuffling .next').css({
-      display: 'none'
-    })
-  });
-
-
-
   // 鼠标移入显示喜欢图标
   $('.ready li .image').mouseenter(function () {
     $(this).children('.mask').css({
@@ -99,5 +79,88 @@ $(function () {
     }else {
       $('.content .movie ul').animate({left: s}, 1000)
     }
-  })
+  });
+
+
+    // 开头轮播图的点击事件
+    var num = -1;
+    var num2 = 2;
+    var i;
+    var timer = null;
+    function NextPlay() {
+        $(".info session").attr("class","hide");
+        num++;
+        $(".shuffling .head img").eq(num).fadeIn(1000).siblings().fadeOut(1000);
+        $(".info .top img").eq(num).fadeIn(1000).siblings().fadeOut(1000);
+        $(".info session").eq(num).attr("class","show");
+        if(num == 3){
+            num = 0;
+            $(".shuffling .head img").eq(num).fadeIn(1000).siblings().fadeOut(1000);
+            $(".info .top img").eq(num).fadeIn(1000).siblings().fadeOut(1000);
+            $(".info session").eq(num).attr("class","show");
+        }
+        i = num;
+    }
+    function BeforePlay() {
+        if(typeof i === 'undefined'){
+            $(".info session").attr("class","hide");
+            num2--;
+            $(".shuffling .head img").eq(num2).fadeIn(1000).siblings().fadeOut(1000);
+            $(".info .top img").eq(num2).fadeIn(1000).siblings().fadeOut(1000);
+            $(".info session").eq(num2).attr("class","show");
+            if(num2 < 0){
+                num2 = 2;
+                $(".shuffling .head img").eq(num2).fadeIn(1000).siblings().fadeOut(1000);
+                $(".info .top img").eq(num2).fadeIn(1000).siblings().fadeOut(1000);
+                $(".info session").eq(num2).attr("class","show");
+            }
+        }else{
+            $(".info session").attr("class","hide");
+            i--;
+            $(".shuffling .head img").eq(i).fadeIn(1000).siblings().fadeOut(1000);
+            $(".info .top img").eq(i).fadeIn(1000).siblings().fadeOut(1000);
+            $(".info session").eq(i).attr("class","show");
+            if(i < 0){
+                i = 2;
+                $(".shuffling .head img").eq(i).fadeIn(1000).siblings().fadeOut(1000);
+                $(".info .top img").eq(i).fadeIn(1000).siblings().fadeOut(1000);
+                $(".info session").eq(i).attr("class","show");
+            }
+        }
+    }
+    function autoPlay() {
+        timer = setInterval(function () {
+            NextPlay();
+        },3000)
+    }
+    autoPlay();
+    $('.shuffling .next').on("click",function(){
+        clearInterval(timer);
+        NextPlay();
+    });
+
+    $('.shuffling .before').on("click",function(){
+        clearInterval(timer);
+        BeforePlay();
+    });
+
+    // 鼠标移入移出显示前后按钮
+    $('.shuffling').mouseenter(function () {
+        clearInterval(timer);
+        $('.shuffling .before').css({
+            display: 'block'
+        });
+        $('.shuffling .next').css({
+            display: 'block'
+        })
+    });
+    $('.shuffling').mouseleave(function () {
+        autoPlay();
+        $('.shuffling .before').css({
+            display: 'none'
+        });
+        $('.shuffling .next').css({
+            display: 'none'
+        })
+    });
 });

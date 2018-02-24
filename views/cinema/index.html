@@ -3,7 +3,9 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>design</title>
+    <title>
+        <%=title%>
+    </title>
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <script src="../javascripts/rem.js"></script>
     <link href="../stylesheets/base.css" rel="stylesheet">
@@ -68,7 +70,7 @@
                 <img src="../images/top2.jpg" alt="">
                 <img src="../images/top3.jpg" alt="">
             </div>
-            <div class="infoBody">
+            <session class="hide">
                 <div class="detail clearfix">
                     <p class="name clearfix">《sb》</p>
                     <span class="actor">导演：莱恩·约翰逊
@@ -111,8 +113,8 @@
                         <span class="sp2">1月5号上映</span>
                     </div>
                 </div>
-            </div>
-            <div class="infoBody">
+            </session>
+            <session class="hide">
                 <div class="detail clearfix">
                     <p class="name clearfix">《ssss》</p>
                     <span class="actor">导演：莱恩·约翰逊
@@ -155,8 +157,8 @@
                         <span class="sp2">1月5号上映</span>
                     </div>
                 </div>
-            </div>
-            <div class="infoBody">
+            </session>
+            <session class="show">
                 <div class="detail clearfix">
                     <p class="name clearfix">《星球大战8》</p>
                     <span class="actor">导演：莱恩·约翰逊
@@ -199,10 +201,11 @@
                         <span class="sp2">1月5号上映</span>
                     </div>
                 </div>
-            </div>
+            </session>
         </div>
         <!--内容-->
         <div class="content clearfix">
+            <!--正在热映-->
             <p class="navigation clearfix">正在热映
                 <span>22部影片</span>
             </p>
@@ -610,6 +613,7 @@
                     <span>></span>
                 </div>
             </div>
+            <!--家境即将上映-->
             <p class="navigation clearfix">即将上映
                 <span>7部影片</span>
             </p>
@@ -674,6 +678,7 @@
                     </li>
                 </ul>
             </div>
+            <!--影院-->
             <div class="place-rank clearfix">
                 <div class="place clearfix">
                     <p class="address-cinema">南京影院
@@ -889,51 +894,8 @@
             </span>
         </div>
         <script src="http://cdn.static.runoob.com/libs/jquery/1.10.2/jquery.min.js"></script>
-        <!--<script src="../javascripts/jquery-1.8.3.min.js"></script>-->
         <script src="../javascripts/indexMouse.js"></script>
-        <script>
-            $(function(){
-                var num = -1;
-                var num2 = 2;
-                var i;
-                console.log(typeof i);
-                // 前后按钮点击事件
-                $('.shuffling .next').on("click",function(){
-                    num++;
-                    $(".shuffling .head img").eq(num).fadeIn(1000).siblings().fadeOut(1000);
-                    $(".info .top img").eq(num).fadeIn(1000).siblings().fadeOut(1000);
-                    if(num == 3){
-                        num = 0;
-                        $(".shuffling .head img").eq(num).fadeIn(1000).siblings().fadeOut(1000);
-                        $(".info .top img").eq(num).fadeIn(1000).siblings().fadeOut(1000);
-                    }
-                    i = num;
-                    console.log(i)
-                });
-
-                $('.shuffling .before').on("click",function(){
-                    if(typeof i === 'undefined'){
-                        num2--;
-                        $(".shuffling .head img").eq(num2).fadeIn(1000).siblings().fadeOut(1000);
-                        $(".info .top img").eq(num2).fadeIn(1000).siblings().fadeOut(1000);
-                        if(num2 < 0){
-                            num2 = 2;
-                            $(".shuffling .head img").eq(num2).fadeIn(1000).siblings().fadeOut(1000);
-                            $(".info .top img").eq(num2).fadeIn(1000).siblings().fadeOut(1000);
-                        }
-                    }else{
-                        i--;
-                        $(".shuffling .head img").eq(i).fadeIn(1000).siblings().fadeOut(1000);
-                        $(".info .top img").eq(i).fadeIn(1000).siblings().fadeOut(1000);
-                        if(i < 0){
-                            i = 2;
-                            $(".shuffling .head img").eq(i).fadeIn(1000).siblings().fadeOut(1000);
-                            $(".info .top img").eq(i).fadeIn(1000).siblings().fadeOut(1000);
-                        }
-                    }
-                });
-            })
-        </script>
+        <script src="../javascripts/index.js"></script>
     </div>
 </body>
 
