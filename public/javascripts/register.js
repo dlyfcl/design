@@ -100,7 +100,7 @@ $(function () {
         },
         success: function (data) {
           if (data === 'register-ok') {
-            location.href = ('/user/login')
+            location.href = ('/')
           }else if (data === 'register-no') {
             alert('该手机号已经被注册')
           }else {

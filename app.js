@@ -8,6 +8,7 @@ var user = require('./routes/url/user')
 var bodyParser = require('body-parser')
 var cinema = require('./routes/url/cinema')
 var users = require('./routes/api/users')
+var cinemas = require('./routes/api/cinemas')
 var ejs = require('ejs')
 var app = express()
 app.engine('html', ejs.__express)
@@ -27,6 +28,7 @@ app.use('/user', user)
 app.use('/', cinema)
 // api
 app.use('/users', users)
+app.use('/cinemas', cinemas)
 
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {
