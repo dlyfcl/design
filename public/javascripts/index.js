@@ -1,5 +1,5 @@
 $(function () {
-    $(".shuffling img").on("click",function(){
+    $(".shuffling .head").on("click",function(){
         console.log("inside index Detail");
         location.href = ('/detail');
     })
