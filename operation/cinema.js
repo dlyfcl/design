@@ -11,6 +11,7 @@ function Cinema (req, res) {
 
 function detail(req,res){
     console.log("inside detail");
+    res.send("detail-ok");
     console.log(req.body);
 }
 module.exports = Cinema;

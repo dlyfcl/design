@@ -1,7 +1,6 @@
 $(function () {
     $(".shuffling .head img").on("click", function () {
         var imgUrl = $(this).attr("src");
-        console.log(imgUrl);
         $.ajax({
             type: 'post',
             url: '/cinemas/detail',
@@ -13,7 +12,11 @@ $(function () {
                 console.log(err);
             },
             success: function (data) {
-                location.href = ('/detail');
+                console.log("detail data" + data);
+                if(data === "detail-ok"){
+                    // location.href = ('/detail');
+                    console.log("yes");
+                }
             }
         })
 

@@ -57,3 +57,4 @@ function register (req, res) {
   }, 'cinemaSystem')
 }
 module.exports = User;
+
