@@ -12,10 +12,9 @@ $(function () {
                 console.log(err);
             },
             success: function (data) {
-                console.log("detail data" + data);
-                if(data === "detail-ok"){
-                    // location.href = ('/detail');
-                    console.log("yes");
+                var mm = "datail-ok";
+                if(data === mm){
+                    location.href = ('/detail');
                 }
             }
         })

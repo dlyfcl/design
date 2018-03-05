@@ -11,7 +11,20 @@ function Cinema (req, res) {
 
 function detail(req,res){
     console.log("inside detail");
-    res.send("detail-ok");
-    console.log(req.body);
+    var sql = 'SELECT * FROM HeadImg WHERE img = \'' + req.body.src + '\';';
+    database(function(con){
+      con.query(sql,function(err,result){
+        console.log("inside detail con");
+        if (err) {
+          console.log(err)
+        }
+        console.log(result);
+        if(result.length !== 0){
+          var mm = "datail-ok";
+          res.send(mm);
+        }
+        return mm;
+      });
+    },"cinemaSystem")
 }
 module.exports = Cinema;

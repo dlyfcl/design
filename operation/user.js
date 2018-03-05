@@ -1,9 +1,7 @@
 var database = require('../database/basic');
 var cb = require('./cb').cb;
-console.log('inside operation');
 function User (req, res) {
   console.log('inside operation User');
-  console.log(req.body);
   if (req.body.action === 'login') {
     login(req, res)
   }else {
