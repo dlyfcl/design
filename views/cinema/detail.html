@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <title>
-        <%=title%>
+        电影信息
     </title>
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <script src="../javascripts/rem.js"></script>
@@ -52,37 +52,37 @@
         </div>
         <!--头部影片介绍-->
         <div class="detailHead clearfix">
-            <img src="../images/head2.jpg" alt="">
+            <img src="<%=bg_url%>" alt="" class="detailHeadImg">
             <div class="Mask clearfix">
                 <div class="listCon clearfix">
                     <p class="title">票务
                         <span>&nbsp>&nbsp电影票&nbsp>&nbsp影片&nbsp>&nbsp</span>
-                        <span class="sp1">南极之恋</span>
+                        <span class="sp1"><%=name%></span>
                     </p>
                     <div class="container clearfix">
                         <div class="left clearfix">
-                            <img src="../images/detail-1.jpg" alt="">
+                            <img src="<%=img_url%>" alt="">
                             <div class="mask clearfix">
                                 <img src="../images/love-2.png" alt="">
                                 <span>想看</span>
                             </div>
                         </div>
                         <div class="right clearfix">
-                            <p class="Title">南极之恋
+                            <p class="Title"><%=name%>
                                 <span>8.0分</span>
                             </p>
-                            <span class="type">90分钟 - 爱情</span>
+                            <span class="type">90分钟 - <%=type%></span>
                             <span class="act">导演：
-                                <span class="actor">吴有音</span>
+                                <span class="actor"><%=director%></span>
                             </span>
                             <span class="main">主演：
-                                <span class="starring">赵又廷,杨子姗</span>
+                                <span class="starring"><%=starring%></span>
                             </span>
                             <span class="number">2家影院上映27场</span>
                             <span class="introduce">
                                 剧情概要：
                                 <span class="content">
-                                    南极，一场坠机，婚庆公司老板吴富春（赵又廷 饰）和 高空物理学家荆如意（杨子姗 饰）相遇， 两个毫无共同语言的男女在南极腹地无人区冒险生存75天。在酷寒、没有物质供应、随处都是绝境的环境中， 活下去已经变成每一天的最大愿望。在寻找救援的过程中，这对性格水火不容但命运却又相濡以沫的人，敬畏了自然，领悟了爱情。
+                                    <%=profile%>
                                 </span>
                             </span>
                         </div>
@@ -128,7 +128,7 @@
                             </span>
                             <span>国语2D</span>
                             <span class="ting">4号厅</span>
-                            <span class="price">￥29</span>
+                            <span class="price">￥<%=price%></span>
                             <span class="buy">选座购票</span>
                         </p>
                     </li>

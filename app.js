@@ -3,6 +3,7 @@ var path = require('path')
 var favicon = require('serve-favicon')
 var logger = require('morgan')
 var cookieParser = require('cookie-parser')
+var session = require('express-session');
 var bodyParser = require('body-parser')
 var user = require('./routes/url/user')
 var bodyParser = require('body-parser')
@@ -22,6 +23,11 @@ app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({ extended: false }))
 app.use(cookieParser())
 app.use(express.static(path.join(__dirname, 'public')))
+app.use(session({
+  secret:"12345",
+  cookie:{maxAge:60000},
+  resave:false
+}))
 
 // url
 app.use('/user', user)
