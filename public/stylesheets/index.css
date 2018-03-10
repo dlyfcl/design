@@ -107,7 +107,6 @@
   margin-left: 18%;
   float: left;
   padding: 0.15rem 0 0 3%;
-  border: 1px solid yellow;
 }
 .con .info session .detail .name {
   font-size: 0.15rem;
@@ -154,7 +153,6 @@
   float: left;
   padding: 0.2rem 0;
   text-align: center;
-  border: 1px solid yellow;
 }
 .con .info session .price .sp1 {
   font-size: 0.3rem;
@@ -175,7 +173,6 @@
 }
 .con .info session .introduce {
   width: 100%;
-  border: 1px solid yellow;
   float: left;
 }
 .con .info session .introduce .title {
@@ -355,6 +352,8 @@
   color: white;
   cursor: pointer;
   font-size: 0.27rem;
+  display: inline-block;
+  padding: 8px 0 0 0;
 }
 .con .content .butn .next {
   border-radius: 0.2rem 0 0 0.2rem;
@@ -373,6 +372,8 @@
   color: white;
   cursor: pointer;
   font-size: 0.27rem;
+  display: inline-block;
+  padding: 8px 0 0 6px;
 }
 .con .content .ready {
   width: 100%;

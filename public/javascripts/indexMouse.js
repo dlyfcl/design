@@ -90,13 +90,13 @@ $(function () {
     function NextPlay() {
         $(".info session").attr("class","hide");
         num++;
-        $(".shuffling .head img").eq(num).fadeIn(1000).siblings().fadeOut(1000);
-        $(".info .top img").eq(num).fadeIn(1000).siblings().fadeOut(1000);
+        $(".shuffling .head img").eq(num).fadeIn(1500).siblings().fadeOut(1500);
+        $(".info .top img").eq(num).fadeIn(1500).siblings().fadeOut(1500);
         $(".info session").eq(num).attr("class","show");
         if(num == 3){
             num = 0;
-            $(".shuffling .head img").eq(num).fadeIn(1000).siblings().fadeOut(1000);
-            $(".info .top img").eq(num).fadeIn(1000).siblings().fadeOut(1000);
+            $(".shuffling .head img").eq(num).fadeIn(1500).siblings().fadeOut(1500);
+            $(".info .top img").eq(num).fadeIn(1500).siblings().fadeOut(1500);
             $(".info session").eq(num).attr("class","show");
         }
         i = num;
@@ -105,25 +105,25 @@ $(function () {
         if(typeof i === 'undefined'){
             $(".info session").attr("class","hide");
             num2--;
-            $(".shuffling .head img").eq(num2).fadeIn(1000).siblings().fadeOut(1000);
-            $(".info .top img").eq(num2).fadeIn(1000).siblings().fadeOut(1000);
+            $(".shuffling .head img").eq(num2).fadeIn(1500).siblings().fadeOut(1500);
+            $(".info .top img").eq(num2).fadeIn(1500).siblings().fadeOut(1500);
             $(".info session").eq(num2).attr("class","show");
             if(num2 < 0){
                 num2 = 2;
-                $(".shuffling .head img").eq(num2).fadeIn(1000).siblings().fadeOut(1000);
-                $(".info .top img").eq(num2).fadeIn(1000).siblings().fadeOut(1000);
+                $(".shuffling .head img").eq(num2).fadeIn(1500).siblings().fadeOut(1500);
+                $(".info .top img").eq(num2).fadeIn(1500).siblings().fadeOut(1500);
                 $(".info session").eq(num2).attr("class","show");
             }
         }else{
             $(".info session").attr("class","hide");
             i--;
-            $(".shuffling .head img").eq(i).fadeIn(1000).siblings().fadeOut(1000);
-            $(".info .top img").eq(i).fadeIn(1000).siblings().fadeOut(1000);
+            $(".shuffling .head img").eq(i).fadeIn(1500).siblings().fadeOut(1500);
+            $(".info .top img").eq(i).fadeIn(1500).siblings().fadeOut(1500);
             $(".info session").eq(i).attr("class","show");
             if(i < 0){
                 i = 2;
-                $(".shuffling .head img").eq(i).fadeIn(1000).siblings().fadeOut(1000);
-                $(".info .top img").eq(i).fadeIn(1000).siblings().fadeOut(1000);
+                $(".shuffling .head img").eq(i).fadeIn(1500).siblings().fadeOut(1500);
+                $(".info .top img").eq(i).fadeIn(1500).siblings().fadeOut(1500);
                 $(".info session").eq(i).attr("class","show");
             }
         }
@@ -131,7 +131,7 @@ $(function () {
     function autoPlay() {
         timer = setInterval(function () {
             NextPlay();
-        },3000)
+        },5000)
     }
     autoPlay();
     $('.shuffling .next').on("click",function(){
