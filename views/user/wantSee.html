@@ -4,13 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <title>
-        登录
+        想看
     </title>
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <script src="../javascripts/rem.js"></script>
     <link href="../stylesheets/base.css" rel="stylesheet">
     <link rel="stylesheet" href="../stylesheets/index.css">
-    <link rel="stylesheet" href="../stylesheets/login.css">
+    <link rel="stylesheet" href="../stylesheets/detail.css">
 </head>
 
 <body>
@@ -31,34 +31,24 @@
                     <a href="#">想看</a>
                 </li>
                 <li>
-                    <a href="/user/login">登录</a>
+                    <a href="/user/login"><%=login%></a>
                 </li>
                 <li style=" background:none;">
-                    <a href="/user/register">注册</a>
+                    <a href="/user/register"><%=register%></a>
+                </li>
+                <li id="user">
+                    <a href="#"><%=user%></a>
                 </li>
             </ul>
         </div>
-
-        <form class="login-frame" method="post">
-            <p>帅逼电影</p>
-            <div class="user-admin">
-                <span class="user active">用户</span>
-                <span class="admin">管理</span>
-            </div>
-            <input type="text" placeholder="请输入您的手机号" id="login-mobile" name="login-mobile">
-            <span class="tips"></span>
-            <input type="password" placeholder="密码为6-12位数字和英文组合" id="login-pwd" name="login-pwd">
-            <span class="tips"></span>
-            <input type="button" value="登录" id="login">
-            <span class="no">没有账号，
-                <a class="registerNow" href="/user/register">立即注册</a>
+        <!--结束说明-->
+        <div class="end clearfix">
+            <span>&copy2000-2017&nbsp&nbsp&nbsp国美在线电子商务有限公司&nbsp&nbsp&nbsp版权 所有&nbsp&nbsp&nbsp沪ICP备11009419号&nbsp&nbsp&nbsp沪B2-20120004号
             </span>
-        </form>
+        </div>
     </div>
-    </div>
+    <script src="http://cdn.static.runoob.com/libs/jquery/1.10.2/jquery.min.js"></script>
     <script src="../javascripts/jquery-1.8.3.min.js"></script>
-    <script src="http://code.jquery.com/jquery-latest.js"></script>
-    <script src="../javascripts/login.js"></script>
 </body>
 
 </html>

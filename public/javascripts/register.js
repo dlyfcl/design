@@ -15,47 +15,56 @@ $(function () {
   // mobile length
   var mobileLengthReg = /^.{11}/;
 
-  var arr = [false, false, false, false];
+  var arr = [false, false, false, false, false];
 
   $('#register-mobile').blur(function () {
     if ($(this).val() === '') {
       $('.tips:eq(0)').text('请填写手机号')
-    }else if (mobileReg.test($(this).val()) === true && mobileLengthReg.test($(this).val()) === true) {
+    } else if (mobileReg.test($(this).val()) === true && mobileLengthReg.test($(this).val()) === true) {
       $('.tips:eq(0)').text('');
       arr[0] = true;
-    }else {
+    } else {
       $('.tips:eq(0)').text('请检查手机格式')
+    }
+  });
+
+  $('#register-name').blur(function () {
+    if ($(this).val() === '') {
+      $('.tips:eq(1)').text('请输入昵称')
+    } else {
+      $('.tips:eq(1)').text('');
+      arr[1] = true;
     }
   });
 
   $('#register-pwd').blur(function () {
     if ($(this).val() === '') {
-      $('.tips:eq(1)').text('请设置密码')
-    }else if (passwordReg.test($(this).val()) === true && passwordReg2.test($(this).val()) === true && passwordLengthReg.test($(this).val()) === true) {
-      $('.tips:eq(1)').text('');
-      arr[1] = true;
-    }else {
-      $('.tips:eq(1)').text('密码格式错误')
+      $('.tips:eq(2)').text('请设置密码')
+    } else if (passwordReg.test($(this).val()) === true && passwordReg2.test($(this).val()) === true && passwordLengthReg.test($(this).val()) === true) {
+      $('.tips:eq(2)').text('');
+      arr[2] = true;
+    } else {
+      $('.tips:eq(2)').text('密码格式错误')
     }
   });
 
   $('#register-pwdAgain').blur(function () {
     if ($(this).val() === '') {
-      $('.tips:eq(2)').text('请确认密码')
-    }else if ($(this).val() === $('#register-pwd').val()) {
-      $('.tips:eq(2)').text('');
-      arr[2] = true;
-    }else {
-      $('.tips:eq(2)').text('两次密码输入不一致')
+      $('.tips:eq(3)').text('请确认密码')
+    } else if ($(this).val() === $('#register-pwd').val()) {
+      $('.tips:eq(3)').text('');
+      arr[3] = true;
+    } else {
+      $('.tips:eq(3)').text('两次密码输入不一致')
     }
   });
 
   var codeChars = new Array(0, 1, 2, 3, 4, 5, 6, 7, 8, 9,
     'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z',
     'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z')
-  function reload () {
+  function reload() {
     var code = '';
-    for (var i = 0;i < 6;i++) {
+    for (var i = 0; i < 6; i++) {
       var num = Math.floor(Math.random() * codeChars.length)
       code += codeChars[num]
     }
@@ -64,47 +73,51 @@ $(function () {
   reload();
 
   $('.verification .change').on('click', function () {
-    reload()
+    reload();
   });
 
   $('#register').on('click', function () {
     if ($('#code').val() === '') {
-      $('.tips:eq(3)').text('请输入验证码');
+      $('.tips:eq(4)').text('请输入验证码');
       reload()
-    }else if ($('#code').val().toLowerCase() === $('#yz').text().toLowerCase()) {
-      $('.tips:eq(3)').text('');
-      arr[3] = true;
+    } else if ($('#code').val().toLowerCase() === $('#yz').text().toLowerCase()) {
+      $('.tips:eq(4)').text('');
+      arr[4] = true;
       console.log(arr)
-    }else {
-      $('.tips:eq(3)').text('验证码错误');
+    } else {
+      $('.tips:eq(4)').text('验证码错误');
       reload()
     }
 
     var flag = 0;
-    for (var i = 0;i < arr.length;i++) {
+    for (var i = 0; i < arr.length; i++) {
       if (arr[i] === true) {
         flag++
       }
     }
-    if (flag === 4) {
+    console.log(arr);
+    if (flag === 5) {
       $.ajax({
         type: 'post',
         url: '/users/register',
         data: {
           'action': 'register',
           'mobile': $('#register-mobile').val(),
-          'pwd': $('#register-pwd').val()
+          'pwd': $('#register-pwd').val(),
+          "name": $('#register-name').val()
         },
         error: function (err) {
           console.log(err)
         },
         success: function (data) {
           if (data === 'register-ok') {
-            location.href = ('/')
-          }else if (data === 'register-no') {
+            location.href = ('/');
+          } else if (data === 'register-no') {
             alert('该手机号已经被注册')
-          }else {
-            alert('error')
+          } else if(data === "namehaved"){
+            alert('该昵称已存在')
+          }else{
+            alert("error");
           }
         }
       })

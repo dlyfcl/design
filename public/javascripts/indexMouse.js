@@ -184,6 +184,33 @@ $(function () {
               }
           }
       })
+    })
 
-  })
+    $("#nav .want").on("click",function(){
+      $.ajax({
+        type: 'post',
+        url: '/users/want',
+        data:{
+          "action":"want"
+        },
+        error: function (err) {
+            console.log(err);
+        },
+        success: function (data) {
+            if(data === "want"){
+              location.href = ('/user/'+ data +'/want');
+            }else if(data === "login"){
+              location.href = ('/user/login')
+            }else{
+              alert("error")
+            }
+        }
+      })
+    })
+
+    // want see
+    $(".ready .image .mask span").on("click",function(){
+      // console.log($(this))
+      $(this).parent().children("img").attr("src","../images/love.png");
+    })
 });
