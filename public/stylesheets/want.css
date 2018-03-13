@@ -1,0 +1,165 @@
+.con .wantContent {
+  width: 80%;
+  margin: 0 auto;
+}
+.con .wantContent .head {
+  width: 100%;
+  padding: 15px 0;
+  float: left;
+}
+.con .wantContent .head p {
+  width: 7%;
+  font-size: 16px;
+  float: left;
+}
+.con .wantContent .head span {
+  font-size: 12px;
+  float: left;
+  padding-top: 8px;
+  display: inline-block;
+}
+.con .wantContent .All {
+  width: 66%;
+  float: left;
+  padding: 1% 15px;
+}
+.con .wantContent .All .wantMovie {
+  width: 42.5%;
+  float: left;
+  padding: 2% 15px;
+  margin-left: 3%;
+}
+.con .wantContent .All .wantMovie .left {
+  width: 40%;
+  float: left;
+}
+.con .wantContent .All .wantMovie .left img {
+  width: 100%;
+}
+.con .wantContent .All .wantMovie .right {
+  width: 50%;
+  float: left;
+  padding: 15px 3%;
+}
+.con .wantContent .All .wantMovie .right span {
+  font-size: 14px;
+  color: #888888;
+  display: inline-block;
+  width: 100%;
+  padding: 4px 0;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.con .wantContent .All .wantMovie .right input {
+  float: right;
+  padding: 5px 15px;
+  margin-right: 5px;
+  color: white;
+  background: gray;
+  font-size: 12px;
+  cursor: pointer;
+}
+.con .wantContent .All .wantMovie .right .title {
+  font-size: 16px;
+  color: black;
+}
+.con .wantContent .RankAll {
+  float: left;
+  width: 31%;
+  border: 1px solid #F9F9F9;
+}
+.con .wantContent .RankAll .rank {
+  float: left;
+  width: 100%;
+}
+.con .wantContent .RankAll .rank .title {
+  font-size: 0.1rem;
+  background: #F9F9F9;
+  font-weight: 300;
+  padding: 0.07rem 0 0.05rem 0.1rem;
+}
+.con .wantContent .RankAll .rank .rank-name-session {
+  width: 100%;
+  border-bottom: 1px solid #F9F9F9;
+}
+.con .wantContent .RankAll .rank .rank-name-session span {
+  color: #AAAAAA;
+  display: inline-block;
+  padding: 0.04rem 0.03rem;
+  font-size: 0.05rem;
+  float: left;
+}
+.con .wantContent .RankAll .rank .rank-name-session .sp3 {
+  float: right;
+}
+.con .wantContent .RankAll .rank .rank-name-session .sp2 {
+  padding: 0.04rem 0.5rem;
+}
+.con .wantContent .RankAll .rank .week {
+  width: 100%;
+  float: left;
+}
+.con .wantContent .RankAll .rank .week li {
+  padding-left: 0.05rem;
+}
+.con .wantContent .RankAll .rank .week li .sp0 {
+  display: inline-block;
+  width: 100%;
+  color: #AAAAAA;
+  padding: 0.04rem 0;
+  font-size: 0.08rem;
+  float: left;
+}
+.con .wantContent .RankAll .rank .week li .sp0 .sp1 {
+  padding-left: 0.08rem;
+  cursor: pointer;
+}
+.con .wantContent .RankAll .rank .week li .sp0 .sp2 {
+  float: right;
+  padding-right: 0.05rem;
+}
+.con .wantContent .RankAll .rank .week li div {
+  width: 25%;
+  float: left;
+  padding-left: 0.1rem;
+  padding-bottom: 0.05rem;
+}
+.con .wantContent .RankAll .rank .week li div img {
+  width: 100%;
+  display: none;
+}
+.con .wantContent .RankAll .rank .week li div .show {
+  display: block;
+}
+.con .wantContent .RankAll .rank .hot li {
+  padding-left: 0.05rem;
+}
+.con .wantContent .RankAll .rank .hot li .sp0 {
+  display: inline-block;
+  width: 100%;
+  color: #AAAAAA;
+  font-size: 0.08rem;
+  float: left;
+}
+.con .wantContent .RankAll .rank .hot li .sp0 a {
+  display: inline-block;
+  padding-left: 0.08rem;
+  cursor: pointer;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.con .wantContent .RankAll .rank .hot li .sp3 {
+  display: inline-block;
+  width: 100%;
+  color: #AAAAAA;
+  padding: 0 0 0.09rem 0.12rem;
+  font-size: 0.05rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.con .wantContent .RankAll .rank .hot li:first-child {
+  padding-top: 0.05rem;
+}

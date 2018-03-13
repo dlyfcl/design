@@ -186,7 +186,8 @@ $(function () {
       })
     })
 
-    $("#nav .want").on("click",function(){
+    $("#nav .want span").on("click",function(){
+      console.log("111")
       $.ajax({
         type: 'post',
         url: '/users/want',
@@ -197,12 +198,9 @@ $(function () {
             console.log(err);
         },
         success: function (data) {
-            if(data === "want"){
-              location.href = ('/user/'+ data +'/want');
-            }else if(data === "login"){
+            console.log(data);
+            if(data === "login"){
               location.href = ('/user/login')
-            }else{
-              alert("error")
             }
         }
       })

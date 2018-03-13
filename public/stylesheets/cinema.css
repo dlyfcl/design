@@ -1,0 +1,229 @@
+.con .cinemaContent {
+  width: 80%;
+  margin: 0 0 0 10%;
+  float: left;
+}
+.con .cinemaContent .left {
+  width: 68%;
+  float: left;
+}
+.con .cinemaContent .left .title {
+  width: 100%;
+}
+.con .cinemaContent .left .title span {
+  display: inline-block;
+  border-bottom: 3px solid #006ECC;
+  padding: 10px 5px;
+  width: 85px;
+  font-size: 20px;
+}
+.con .cinemaContent .left .type {
+  width: 100%;
+  padding: 15px 0;
+}
+.con .cinemaContent .left .type .kind {
+  display: inline-block;
+  color: gray;
+  font-size: 12px;
+  padding: 5px 0;
+}
+.con .cinemaContent .left .type ul {
+  width: 100%;
+  padding: 10px 0;
+}
+.con .cinemaContent .left .type ul li {
+  float: left;
+  width: 4%;
+  margin-left: 1%;
+  text-align: center;
+}
+.con .cinemaContent .left .type ul li span {
+  display: inline-block;
+  padding: 3px 0;
+  width: 100%;
+  font-size: 12px;
+  cursor: pointer;
+}
+.con .cinemaContent .left .type ul .active {
+  background: #006ECC;
+  color: white;
+}
+.con .cinemaContent .left .cinema {
+  width: 49%;
+  padding: 20px 0;
+  float: left;
+}
+.con .cinemaContent .left .cinema .CinemaLeft {
+  width: 38%;
+  float: left;
+}
+.con .cinemaContent .left .cinema .CinemaLeft .cinameLeft {
+  width: 100%;
+  float: left;
+  position: relative;
+}
+.con .cinemaContent .left .cinema .CinemaLeft .cinameLeft img {
+  width: 100%;
+  cursor: pointer;
+  height: 280px;
+}
+.con .cinemaContent .left .cinema .CinemaLeft .cinameLeft .mask {
+  width: 100%;
+  background: black;
+  text-align: center;
+  opacity: 0.8;
+  padding: 2px 0 3px 0;
+  position: absolute;
+  left: 0;
+  cursor: pointer;
+  display: none;
+  bottom: 0;
+}
+.con .cinemaContent .left .cinema .CinemaLeft .cinameLeft .mask img {
+  width: 15%;
+  height: 10%;
+}
+.con .cinemaContent .left .cinema .CinemaLeft .cinameLeft .mask span {
+  color: white;
+  font-size: 14px;
+}
+.con .cinemaContent .left .cinema .price {
+  width: 100%;
+  float: left;
+  padding: 6px 0;
+}
+.con .cinemaContent .left .cinema .price .sp1 {
+  color: #FF7700;
+  font-size: 20px;
+}
+.con .cinemaContent .left .cinema .price .sp2 {
+  font-size: 14px;
+  color: #AAAAAA;
+}
+.con .cinemaContent .left .cinema .price .buy {
+  display: inline-block;
+  float: right;
+  font-size: 12px;
+  background: #006ECC;
+  color: white;
+  border-radius: 10px;
+  padding: 3px 7px 4px 7px;
+  cursor: pointer;
+}
+.con .cinemaContent .left .cinema .cinemaRight {
+  float: left;
+  width: 48%;
+  padding: 0 2% 0 5%;
+}
+.con .cinemaContent .left .cinema .cinemaRight span {
+  display: inline-block;
+  width: 100%;
+  padding: 7px 0;
+  font-size: 16px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.con .cinemaContent .right {
+  width: 31%;
+  float: left;
+}
+.con .cinemaContent .right .RankAll {
+  float: left;
+  width: 100%;
+  border: 1px solid #F9F9F9;
+}
+.con .cinemaContent .right .RankAll .rank {
+  float: left;
+  width: 100%;
+}
+.con .cinemaContent .right .RankAll .rank .title {
+  font-size: 0.1rem;
+  background: #F9F9F9;
+  font-weight: 300;
+  padding: 0.07rem 0 0.05rem 0.1rem;
+}
+.con .cinemaContent .right .RankAll .rank .rank-name-session {
+  width: 100%;
+  border-bottom: 1px solid #F9F9F9;
+}
+.con .cinemaContent .right .RankAll .rank .rank-name-session span {
+  color: #AAAAAA;
+  display: inline-block;
+  padding: 0.04rem 0.03rem;
+  font-size: 0.05rem;
+  float: left;
+}
+.con .cinemaContent .right .RankAll .rank .rank-name-session .sp3 {
+  float: right;
+}
+.con .cinemaContent .right .RankAll .rank .rank-name-session .sp2 {
+  padding: 0.04rem 0.5rem;
+}
+.con .cinemaContent .right .RankAll .rank .week {
+  width: 100%;
+  float: left;
+}
+.con .cinemaContent .right .RankAll .rank .week li {
+  padding-left: 0.05rem;
+}
+.con .cinemaContent .right .RankAll .rank .week li .sp0 {
+  display: inline-block;
+  width: 100%;
+  color: #AAAAAA;
+  padding: 0.04rem 0;
+  font-size: 0.08rem;
+  float: left;
+}
+.con .cinemaContent .right .RankAll .rank .week li .sp0 .sp1 {
+  padding-left: 0.08rem;
+  cursor: pointer;
+}
+.con .cinemaContent .right .RankAll .rank .week li .sp0 .sp2 {
+  float: right;
+  padding-right: 0.05rem;
+}
+.con .cinemaContent .right .RankAll .rank .week li div {
+  width: 25%;
+  float: left;
+  padding-left: 0.1rem;
+  padding-bottom: 0.05rem;
+}
+.con .cinemaContent .right .RankAll .rank .week li div img {
+  width: 100%;
+  display: none;
+}
+.con .cinemaContent .right .RankAll .rank .week li div .show {
+  display: block;
+}
+.con .cinemaContent .right .RankAll .rank .hot li {
+  padding-left: 0.05rem;
+}
+.con .cinemaContent .right .RankAll .rank .hot li .sp0 {
+  display: inline-block;
+  width: 100%;
+  color: #AAAAAA;
+  font-size: 0.08rem;
+  float: left;
+}
+.con .cinemaContent .right .RankAll .rank .hot li .sp0 a {
+  display: inline-block;
+  padding-left: 0.08rem;
+  cursor: pointer;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.con .cinemaContent .right .RankAll .rank .hot li .sp3 {
+  display: inline-block;
+  width: 100%;
+  color: #AAAAAA;
+  padding: 0 0 0.09rem 0.12rem;
+  font-size: 0.05rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.con .cinemaContent .right .RankAll .rank .hot li:first-child {
+  padding-top: 0.05rem;
+}

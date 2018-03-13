@@ -17,11 +17,11 @@ $(function () {
         console.log('login.js huo de data =' + data);
         if (data === 'login-ok') {
           location.href = ('/')
-        }else if (data === 'login-no') {
+        } else if (data === 'login-no') {
           alert('该手机号尚未注册，请前往注册')
-        }else if(data === "error"){
+        } else if (data === "error") {
           alert('username error')
-        }else{
+        } else {
           alert('error')
         }
       }

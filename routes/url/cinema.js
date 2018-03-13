@@ -16,4 +16,9 @@ router.get('/help', function (req, res) {
   Cinema(req,res);
   // res.render('cinema/index', { title: '首页' })
 });
+router.get('/cinema', function (req, res) {
+  req.session.url = "cinema";
+  Cinema(req,res);
+  // res.render('cinema/cinema',)
+});
 module.exports = router;

@@ -1,0 +1,233 @@
+.con {
+    .cinemaContent {
+        width: 80%;
+        margin: 0 0 0 10%;
+        float: left;
+        .left {
+            width: 68%;
+            float: left;
+            .title {
+                width: 100%;
+                span {
+                    display: inline-block;
+                    border-bottom: 3px solid #006ECC;
+                    padding: 10px 5px;
+                    width: 85px;
+                    font-size: 20px;
+                }
+            }
+            .type {
+                width: 100%;
+                padding: 15px 0;
+                .kind {
+                    display: inline-block;
+                    color: gray;
+                    font-size: 12px;
+                    padding: 5px 0;
+                }
+                ul {
+                    width: 100%;
+                    padding: 10px 0;
+                    li {
+                        float: left;
+                        width: 4%;
+                        margin-left: 1%;
+                        text-align: center;
+                        span {
+                            display: inline-block;
+                            padding: 3px 0;
+                            width: 100%;
+                            font-size: 12px;
+                            cursor: pointer;
+                        }
+                    }
+                    .active {
+                        background: #006ECC;
+                        color: white;
+                    }
+                }
+            }
+            .cinema {
+                width: 49%;
+                padding: 20px 0;
+                float: left;
+                .CinemaLeft {
+                    width: 38%;
+                    float: left;
+                    .cinameLeft {
+                        width: 100%;
+                        float: left;
+                        position: relative;
+                        img {
+                            width: 100%;
+                            cursor: pointer;
+                            height: 280px;
+                        }
+                        .mask {
+                            width: 100%;
+                            background: black;
+                            text-align: center;
+                            opacity: 0.8;
+                            padding: 2px 0 3px 0;
+                            position: absolute;
+                            left: 0;
+                            cursor: pointer;
+                            display: none;
+                            bottom: 0;
+                            img {
+                                width: 15%;
+                                height: 10%;
+                            }
+                            span {
+                                color: white;
+                                font-size: 14px;
+                            }
+                        }
+                    }
+                }
+                .price {
+                    width: 100%;
+                    float: left;
+                    padding: 6px 0;
+                    .sp1 {
+                        color: #FF7700;
+                        font-size: 20px;
+                    }
+                    .sp2 {
+                        font-size: 14px;
+                        color: #AAAAAA;
+                    }
+                    .buy {
+                        display: inline-block;
+                        float: right;
+                        font-size: 12px;
+                        background: #006ECC;
+                        color: white;
+                        border-radius: 10px;
+                        padding: 3px 7px 4px 7px;
+                        cursor: pointer;
+                    }
+                }
+                .cinemaRight {
+                    float: left;
+                    width: 48%;
+                    padding: 0 2% 0 5%;
+                    span {
+                        display: inline-block;
+                        width: 100%;
+                        padding: 7px 0;
+                        font-size: 16px;
+                        overflow: hidden;
+                        white-space: nowrap;
+                        text-overflow: ellipsis
+                    }
+                }
+            }
+        }
+        .right {
+            width: 31%;
+            float: left;
+            .RankAll {
+                float: left;
+                width: 100%;
+                border: 1px solid #F9F9F9;
+                .rank {
+                    float: left;
+                    width: 100%;
+                    .title {
+                        font-size: 0.1rem;
+                        background: #F9F9F9;
+                        font-weight: 300;
+                        padding: 0.07rem 0 0.05rem 0.1rem;
+                    }
+                    .rank-name-session {
+                        width: 100%;
+                        border-bottom: 1px solid #F9F9F9;
+                        span {
+                            color: #AAAAAA;
+                            display: inline-block;
+                            padding: 0.04rem 0.03rem;
+                            font-size: 0.05rem;
+                            float: left;
+                        }
+                        .sp3 {
+                            float: right;
+                        }
+                        .sp2 {
+                            padding: 0.04rem 0.5rem;
+                        }
+                    }
+                    .week {
+                        width: 100%;
+                        float: left;
+                        li {
+                            padding-left: 0.05rem;
+                            .sp0 {
+                                display: inline-block;
+                                width: 100%;
+                                color: #AAAAAA;
+                                padding: 0.04rem 0;
+                                font-size: 0.08rem;
+                                float: left;
+                                .sp1 {
+                                    padding-left: 0.08rem;
+                                    cursor: pointer;
+                                }
+                                .sp2 {
+                                    float: right;
+                                    padding-right: 0.05rem;
+                                }
+                            }
+                            div {
+                                width: 25%;
+                                float: left;
+                                padding-left: 0.1rem;
+                                padding-bottom: 0.05rem;
+                                img {
+                                    width: 100%;
+                                    display: none;
+                                }
+                                .show {
+                                    display: block;
+                                }
+                            }
+                        }
+                    }
+                    .hot {
+                        li {
+                            padding-left: 0.05rem;
+                            .sp0 {
+                                display: inline-block;
+                                width: 100%;
+                                color: #AAAAAA;
+                                font-size: 0.08rem;
+                                float: left;
+                                a {
+                                    display: inline-block;
+                                    padding-left: 0.08rem;
+                                    cursor: pointer;
+                                    overflow: hidden;
+                                    text-overflow: ellipsis;
+                                    white-space: nowrap;
+                                }
+                            }
+                            .sp3 {
+                                display: inline-block;
+                                width: 100%;
+                                color: #AAAAAA;
+                                padding: 0 0 0.09rem 0.12rem;
+                                font-size: 0.05rem;
+                                overflow: hidden;
+                                text-overflow: ellipsis;
+                                white-space: nowrap;
+                            }
+                        }
+                        li:first-child {
+                            padding-top: 0.05rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
