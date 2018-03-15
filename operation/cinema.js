@@ -9,7 +9,9 @@ function Cinema(req, res) {
     cinema(req, res);
   } else if (req.body.action === 'add') {
     add(req, res);
-  } else {
+  }else if (req.body.action === 'nine') {
+    nine(req, res);
+  }  else {
     switch (req.session.url) {
       case "index":
         console.log("inside switch index")
@@ -99,6 +101,20 @@ function add(req, res) {
     res.send("login");
   }
  
+}
+
+function nine(req,res){
+  console.log("inside nine")
+  database(function(con){
+    console.log("inside ninew")
+    var sql = 'DELETE FROM want WHERE name = \'' + req.body.cinemaName + '\' and user = \'' + req.session.username + '\';';
+    con.query(sql,function(err,result){
+      if (err) {
+        console.log(err);
+      }
+      res.send("ok")
+    })
+  },"cinemaSystem")
 }
 
 //  get

@@ -10,7 +10,12 @@ router.get('/register', function (req, res) {
 })
 router.get('/want', function (req, res) {
   // if(req.params.id === req.session.userId){
-    res.render('user/wantSee');
+    if(req.session.username){
+      res.render('user/wantSee');
+    }else{
+      res.render('user/login');
+    }
+    
   // }
 })
 module.exports = router

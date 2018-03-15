@@ -38,9 +38,10 @@ $(function () {
             });
 
             $(".cinameLeft .mask span").on("click", function () {
+                var Name = $(this).parent().parent().parent().parent().children(".cinemaRight").children(".title").text();
                 if ($(this).parent().children("img").attr("src") === "../images/love-2.png") {
                     $(this).parent().children("img").attr("src", "../images/love.png");
-                    var Name = $(this).parent().parent().parent().parent().children(".cinemaRight").children(".title").text();
+                    $(".cinameLeft .mask").hide();
                     console.log(Name);
                     $.ajax({
                         type: "post",
@@ -56,7 +57,6 @@ $(function () {
                             console.log(data2)
                             if (data2 === "haved") {
                                 alert("已经收藏过");
-                                $(this).parent().children("img").attr("src", "../images/love-2.png");
                             } else if (data2 === "login") {
                                 location.href = "/user/login"
                             }
@@ -64,6 +64,22 @@ $(function () {
                     })
                 } else {
                     $(this).parent().children("img").attr("src", "../images/love-2.png");
+                    $(".cinameLeft .mask").hide();
+                    $.ajax({
+                        type: "post",
+                        url: "/cinemas/cinema",
+                        data: {
+                            "cinemaName": Name,
+                            "action": "nine"
+                        },
+                        error: function (err) {
+                            console.log(err);
+                        },
+                        success: function (data3) {
+                            console.log(data3)
+                            console.log("data");
+                        }
+                    })
                 }
             })
             $(".cinemaContent .type ul li span").on("click", function () {
